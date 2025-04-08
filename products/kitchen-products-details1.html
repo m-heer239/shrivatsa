@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatic Slideshow</title>
+  <style>
+  .card {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999; 
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.slide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="../assets/img/portfolio/app-1.jpg" alt="Image 1">
+    </div>
+    <div class="slide fade">
+      <img src="../assets/img/portfolio/product-1.jpg" alt="Image 2">
+    </div>
+    <div class="slide fade">
+      <img src="../assets/img/portfolio/branding-1.jpg" alt="Image 3">
+    </div>
+    <!-- Add more images as needed -->
+  </div>
+  <p>I am Hiral</p>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var slides = document.getElementsByClassName("slide");
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+});
+
+</script>
+</body>
+</html>
