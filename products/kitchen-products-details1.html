@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chopper Products</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    .info-card {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin-top: 20px;
+      background: #f9f9f9;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      background: red;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+    }
+
+    .col-lg-4 {
+      width: 30%;
+      float: left;
+      margin: 1%;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .post-category {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="productContainer">
+  <!-- Product cards will be inserted here -->
+</div>
+
+<!-- Info Card (Hidden by Default) -->
+<div id="infoCard" class="info-card hidden">
+  <button id="closeButton" class="close-btn">X</button>
+  <h2 id="name"></h2>
+  <p id="info"></p>
+</div>
+
+<script>
+  // Your data object
+  const chopper = {
+    "SquareChopper": {
+      "Name": "Square Chopper (900ml & 600ml)",
+      "Metal": "Steel",
+      "Tag Line": "Chop Smarter. Live Better.",
+      "Short Description": "The Shrivatsa Square Chopper combines elegance with precision...",
+      "Material": "BPA-Free Food-Grade Plastic",
+      "Blade": "420 Grade Stainless Steel, Conically Ground",
+      "Hardening": "1050°C | 55-56 HRC",
+      "Operation": "Manual Pull Cord",
+      "Size": "900ml / 600ml",
+      "Info": "Anti-Skid Base, Dishwasher Safe"
+    },
+    "PushChopper": {
+      "Name": "Push Chopper (800ml & 1100ml)",
+      "Metal": "Steel",
+      "Tag Line": "Push Power. Precision Performance.",
+      "Short Description": "Shrivatsa Push Choppers feature a dynamic push-top system...",
+      "Material": "BPA-Free High Impact Plastic",
+      "Blade": "420 Grade Stainless Steel",
+      "Hardening": "1050°C | 55-56 HRC",
+      "Operation": "Push-Top System",
+      "Size": "800ml / 1100ml",
+      "Info": "Anti-Skid Base, Easy to Clean"
+    },
+    "HandyChopper": {
+      "Name": "Handy Chopper (450ml & 950ml)",
+      "Metal": "Steel",
+      "Tag Line": "Small size. Giant Performance.",
+      "Short Description": "Shrivatsa Handy Choppers redefine daily kitchen prep...",
+      "Material": "BPA-Free Plastic",
+      "Blade": "420 Grade Stainless Steel",
+      "Hardening": "1050°C | 55-56 HRC",
+      "Operation": "Pull Cord System",
+      "Size": "450ml / 950ml",
+      "Info": "Compact Design, Strong Grip"
+    }
+  };
+
+  const container = document.getElementById('productContainer');
+
+  // Loop through each product and build HTML
+  for (let key in chopper) {
+    const product = chopper[key];
+
+    const div = document.createElement('div');
+    div.className = 'col-lg-4';
+
+    div.innerHTML = `
+      <article>
+        <div class="post-img">
+          <!-- Dummy image slider -->
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/250x150?text=${encodeURIComponent(product.Name)}" alt="">
+            </div>
+          </div>
+        </div>
+        <p class="post-category">${product.Name}</p>
+        <p><b>${product["Tag Line"]}</b></p>
+        <h2 class="title">
+          <a href="#" class="info-link" data-key="${key}">Click here for more info.</a>
+        </h2>
+      </article>
+    `;
+
+    container.appendChild(div);
+  }
+
+  // Handle info card display
+  const infoCard = document.getElementById('infoCard');
+  const nameField = document.getElementById('name');
+  const infoField = document.getElementById('info');
+
+  container.addEventListener('click', function (e) {
+    if (e.target && e.target.classList.contains('info-link')) {
+      e.preventDefault();
+      const key = e.target.getAttribute('data-key');
+      const product = chopper[key];
+
+      nameField.textContent = product.Name;
+      infoField.textContent = product.Info;
+      infoCard.classList.remove('hidden');
+    }
+  });
+
+  // Close button handler
+  document.getElementById('closeButton').addEventListener('click', () => {
+    infoCard.classList.add('hidden');
+  });
+</script>
+
+</body>
+</html>

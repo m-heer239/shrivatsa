@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Electronics</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../gallery/logo/logo.jpg" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <script>
+    // Show popup on page load
+    window.onload = function () {
+        document.getElementById("popupOverlay").style.display = "flex";
+    };
+
+    // Close popup
+    function closePopup() {
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+    
+    function data(){
+        const electronicGadgets = {
+          "ChargingCables" : {
+            "Name": "Charging Cables",
+            "Images":{
+              "Image1": "1.2.jpg",
+              "Image2": "1.1.jpg",
+              "Image3": "2.2.jpg",
+              "Image4": "2.1.jpg",
+              "Image5": "3.2.jpg",
+              "Image6": "3.1.jpg",
+              "Image7": "4.2.jpg",
+              "Image8": "4.1.jpg",
+              "Image9": "5.2.jpg",
+              "Image10": "5.1.jpg",
+              "Image11": "6.2.jpg",
+              "Image12": "6.1.jpg",
+              "Image13": "7.2.jpg",
+              "Image1": "7.1.jpg",
+              "Image2": "8.2.jpg",
+              "Image3": "8.1.jpg",
+              "Image4": "9.2.jpg",
+              "Image5": "9.1.jpg",
+              "Image6": "10.2.jpg",
+              "Image7": "10.1.jpg",
+              "Image8": "11.2.jpg",
+              "Image9": "11.1.jpg",
+              "Image10": "12.2.jpg",
+              "Image11": "12.1.jpg"
+            },
+            "Short Description": "Shrivatsa charging cables are designed for <b>fast, stable charging and extended durability</b>, suitable for daily use at home, work, or on the move.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"Connector types: Type-C · Micro USB · iPhone compatible",
+              "v2":"Lengths: 1 m · 1.5 m · 2 m",
+            },
+            "Material Build Title": "<h5>Material & Build:</h5>",
+            "Material Build": {
+              "m1":"Reinforced PVC or braided nylon outer layer",
+              "m2":"Strengthened connector joints to reduce wear",
+              "m3":"Flexible cable design to prevent breakage",
+            },
+            "Charging Performance Title": "<h5>Charging Performance:</h5>",
+            "Charging Performance": {
+              "d1":"Charging output <b>up to 3.0A</b> (device dependent)",
+              "d2":"Stable power delivery for smartphones, tablets, and accessories",
+            },
+            "Best fit for": "<b>Best fit for:</b> Everyday device charging, offices, retail bundles, and mobile accessory users."
+          },
+          "WallChargersPowerAdapters" : {
+            "Name": "Wall Chargers & Power Adapters",
+            "Images":{
+              "Image1": "2.2.jpg",
+              "Image2": "2.1.jpg",
+              "Image3": "3.2.jpg",
+              "Image4": "3.1.jpg",
+              "Image5": "4.2.jpg",
+              "Image6": "4.1.jpg",
+              "Image7": "5.2.jpg",
+              "Image8": "5.1.jpg",
+              "Image9": "6.2.jpg",
+              "Image10": "6.1.jpg"
+            },
+            "Short Description": "Shrivatsa wall chargers deliver <b>efficient and controlled power output</b>, designed for safe charging of one or multiple devices.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"Single-port and dual-port models",
+              "v2":"USB-A · USB-C output options",
+            },
+            "Safety Build Title": "<h5>Safety & Build:</h5>",
+            "Safety Build": {
+              "m1":"Heat-resistant housing",
+              "m2":"Integrated protection against overheating, overcurrent, and short circuit",
+              "m3":"Designed for long charging sessions",
+            },
+            "Power Output Title": "<h5>Power Output:</h5>",
+            "Power Output": {
+              "d1":"Input: AC 100–240 V",
+              "d2":"Output options <b>up to 18W / 3.0A</b> (model dependent)",
+            },
+            "Best fit for": "<b>Best fit for:</b> Home charging, offices, hotels, travel use, and retail electronics."
+          },
+          "WiredEarphonesWithMicrophone" : {
+            "Name": "Wired Earphones with Microphone",
+            "Images":{
+              "Image1": "1.2.jpg",
+              "Image2": "1.1.jpg",
+              "Image3": "2.2.jpg",
+              "Image4": "2.1.jpg",
+              "Image5": "3.2.jpg",
+              "Image6": "3.1.jpg",
+              "Image7": "4.2.jpg",
+              "Image8": "4.1.jpg"
+            },
+            "Short Description": "Shrivatsa wired earphones are built for <b>clear sound output and dependable call quality</b>, making them ideal for everyday communication and media use.",
+            "Design Comfort Title": "<h5>Design & Comfort:</h5>",
+            "Design Comfort": {
+              "v1":"Lightweight, comfortable in-ear fit",
+              "v2":"Tangle-resistant cable design",
+            },
+            "Audio & Control Title": "<h5>Audio & Control:</h5>",
+            "Audio & Control": {
+              "m1":"3.5 mm universal audio connector",
+              "m2":"Integrated microphone with multi-function control button",
+              "m3":"Tuned for balanced sound and clear voice pickup",
+            },
+            "Best fit for": "<b>Best fit for:</b> Calls, online meetings, education, office use, and personal entertainment."
+          },
+          "WirelessNeckbands" : {
+            "Name": "Wireless Neckbands",
+            "Images":{
+              "Image1": "5.2.jpg",
+              "Image2": "5.1.jpg",
+              "Image3": "1.1.jpg",
+              "Image4": "2.1.jpg",
+              "Image5": "3.1.jpg",
+              "Image6": "4.1.jpg",
+              "Image7": "6.1.jpg",
+              "Image8": "7.1.jpg"
+            },
+            "Short Description": "Shrivatsa wireless neckbands combine <b>strong battery performance with everyday comfort</b>, designed for users who need long hours of uninterrupted listening.",
+            "Connectivity & Control Title": "<h5>Connectivity & Control:</h5>",
+            "Connectivity & Control": {
+              "v1":"Bluetooth connectivity (latest supported versions)",
+              "v2":"Stable wireless range for daily movement",
+            },
+            "Battery Performance Title": "<h5>Battery Performance:</h5>",
+            "Battery Performance": {
+              "m1":"Playback time <b>up to 20–30 hours</b> (model dependent)",
+              "m2":"Fast recharging via Type-C or Micro USB",
+            },
+            "Design Features Title": "<h5>Design Features:</h5>",
+            "Design Features": {
+              "d1":"Lightweight neckband structure",
+              "d2":"Designed for extended wear and daily activity",
+            },
+            "Best fit for": "<b>Best fit for:</b> Commuters, professionals, fitness users, and lifestyle electronics buyers."
+          },
+          "BluetoothSpeakers" : {
+            "Name": "Bluetooth Speakers",
+            "Images":{
+              "Image1": "1.2.jpg",
+              "Image2": "1.1.jpg",
+              "Image3": "2.2.jpg",
+              "Image4": "2.1.jpg",
+              "Image5": "3.2.jpg",
+              "Image6": "3.1.jpg",
+              "Image7": "4.2.jpg",
+              "Image8": "4.1.jpg"
+            },
+            "Images":{
+              "Image1": "1.2.jpg",
+              "Image2": "1.1.jpg",
+              "Image3": "2.2.jpg",
+              "Image4": "2.1.jpg",
+              "Image5": "3.2.jpg",
+              "Image6": "3.1.jpg",
+              "Image7": "4.2.jpg",
+              "Image8": "4.1.jpg"
+            },
+            "Short Description": "Shrivatsa Bluetooth speakers deliver <b>clear, powerful sound in compact formats</b>, suitable for both indoor use and portable listening.",
+            "Connectivity Title": "<h5>Connectivity:</h5>",
+            "Connectivity": {
+              "v1":"Bluetooth wireless pairing",
+              "v2":"AUX input and memory card support (model dependent)",
+            },
+            "Battery Performance Title": "<h5>Battery Performance:</h5>",
+            "Battery Performance": {
+              "m1":"Playback time <b>up to 6–12 hours</b>",
+              "m2":"Rechargeable lithium battery (capacity varies by model)",
+            },
+            "Build Title": "<h5>Build:</h5>",
+            "Build": {
+              "d1":"Compact, easy-to-carry design",
+              "d2":"Durable outer casing for daily use",
+            },
+            "Best fit for": "<b>Best fit for:</b> Home entertainment, travel, small gatherings, and retail electronics assortments."
+          },
+          "CarChargers" : {
+            "Name": "Car Chargers (Dual USB)",
+            "Images":{
+              "Image1": "1.2.jpg",
+              "Image2": "1.1.jpg",
+              "Image3": "2.2.jpg",
+              "Image4": "2.1.jpg",
+              "Image5": "3.2.jpg",
+              "Image6": "3.1.jpg"
+            },
+            "Short Description": "Shrivatsa car chargers are designed for <b>safe and efficient in-vehicle charging</b>, allowing multiple devices to charge simultaneously while driving.",
+            "Compatibility Title": "<h5>Compatibility:</h5>",
+            "Compatibility": {
+              "v1":"Works with standard vehicle power sockets",
+            },
+            "Safety Build Title": "<h5>Safety & Build:</h5>",
+            "Safety Build": {
+              "m1":"Heat-resistant housing",
+              "m2":"Protection against overcurrent and overheating",
+            },
+            "Power Output Title": "<h5>Power Output:</h5>",
+            "Power Output": {
+              "d1":"Input: DC 12–24 V",
+              "d2":"Dual USB output with <b>fast charging support</b>",
+            },
+            "Best fit for": "<b>Best fit for:</b> Cars, taxis, fleet vehicles, travel users, and automotive accessory retailers."
+          }
+        }
+        return electronicGadgets;
+    }
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Append
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Updated: May 18 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+  <!-- Popup Overlay -->
+  <div id="popupOverlay" class="popup-overlay">
+    <div class="popup-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Launching Shortly</h2>
+        <p>
+            Powering the Connected World.</br></br>
+            Chargers, accessories, audio — we link innovation with distribution.</br>
+            Our electronics division is under development, designed to connect global buyers and Indian technology suppliers.</br></br>
+            ⚙️ Explore partnership opportunities while our new interface takes shape.
+
+        </p>
+    </div>
+  </div>
+
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../gallery/logo/logo.jpg" alt="">
+        <div class="logo-text">
+          <h1 class="sitename">Shrivatsa</h1>
+          <p>Powered by SSIE</p> 
+        </div><span></span>  
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html" class="">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#portfolio">Products</a></li>
+          <li><a href="../index.html#owner">Owner</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="" class=""></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Electronics</h1>
+              <p class="mb-0">
+                <b>Reliable consumer electronics and accessories built for everyday performance and efficiency.</b><br>
+                Shrivatsa Electronics focuses on practical, well-engineered accessories and devices designed for consistent everyday use. 
+                Our portfolio includes charging solutions, audio products, and smart accessories developed with an emphasis on performance stability, efficiency, and durability. Products are selected to meet functional expectations while supporting responsible sourcing and quality control standards.
+                <span class="info-icon" aria-label="Information">ⓘ
+                <span class="tooltip">
+                  Technical specifications and compliance information are available upon request.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html#portfolio">Home</a></li>
+            <li class="current">Electronics</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Electronics/Main Frame/Electronics.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Electronics/Main Frame/12.2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Electronics/Main Frame/7.2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Electronics/Main Frame/1.2 (2).jpg" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+
+      <div class="container" id="mainContent">
+        <div class="row gy-4" id="productContainer">
+
+          
+            <!-- Product cards will be inserted here -->
+          
+          <div id="overlay" class="hidden"></div>
+          <div id="infoCard" class="info-card hidden">
+            <button id="closeButton" class="close-btn">X</button>
+            <!--<h2 id="cardHeader"></h2>
+            <p id="cardBody"></p>-->
+            <div class="info-content">
+              <div class="info-left" id="cardImages"></div>
+              <div class="info-right scroll-area">
+                <h2 id="cardHeader"></h2>
+                <div id="cardBody"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Posts Section -->
+        </div>
+
+      </div>
+
+    </section><!-- /portfolio Details Section -->
+
+  </main>
+
+  <a href="https://wa.me/4917648060918" 
+   class="whatsapp-float" 
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp Chat">
+  </a>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Shrivatsa</span>
+          </a>
+          <p>At Shrivatsa, we bridge European markets with the world, offering expert import/export services focused on excellence and lasting relationships. Our experienced team ensures smooth, reliable transactions with the highest standards of quality and integrity.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/indiamart.png" width="22"></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/alibaba.png" width="22"></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../privacy-policy.html#terms-conditions">Terms & Conditions</a></li>
+            <li><a href="../privacy-policy.html#compliance-regulatory-information">Compliance & Regulatory Information</a></li>
+            <li><a href="../privacy-policy.html#legal-information-imprint">Legal Information / Imprint</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="../services/export-services.html">Export Services</a></li>
+            <li><a href="../services/import-services.html">Import Services</a></li>
+            <li><a href="../services/distribution-services.html">Distribution Services</a></li>
+            <li><a href="../services/negotiation-partnership-strategy.html">Negotiation & Partnership Strategy</a></li>
+            <li><a href="../services/market-research-consultancy.html">Market Research & Consultancy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us <i class="bi bi-headset help-icon"></i></h4>
+          <p><a href="../location/superSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Munich, Germany</p>
+          <p><a href="../location/shreeSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Office No. 304, Shree Hari Empire,</p>
+          <p style="padding-left: 20px;">Nr. Tulsi Market, Raiya Road,</p>
+          <p style="padding-left: 20px;">Rajkot, Gujarat, India 360005</p>
+          <p class="mt-4"><a href="tel:+4917648060918"><i class="bi bi-telephone me-2"></i></a><span>+49 176 48060918</span></p>
+          <p><a href="mailto:info@supersonicimportexport.com"><i class="bi bi-envelope me-2"></i></a><span>info@supersonicimportexport.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Super Sonic Import Export</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <br><h4 style="font-family: Lucida Handwriting">Made with Love and Passion</h4>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script>
+    const container = document.getElementById('productContainer');
+    const infoCard = document.getElementById('infoCard');
+    const overlay = document.getElementById('overlay');
+    const nameField = document.getElementById('cardHeader');
+    const infoField = document.getElementById('cardBody');
+    const cardImages = document.getElementById('cardImages');
+    const closeButton = document.getElementById('closeButton');
+
+    // Get data
+    const plasticGranuels = data();
+
+    /************************************
+    * BUILD PRODUCT CARDS
+    ************************************/
+    for (let key in plasticGranuels) {
+      const product = plasticGranuels[key];
+
+      const swiperConfig = {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      };
+
+      const card = document.createElement('div');
+      card.className = 'col-lg-4 product-card';
+      card.setAttribute('data-key', key);
+
+      const slidesHtml = buildSlides(product);
+
+      card.innerHTML = `
+        <article>
+          <div class="post-img">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                ${slidesHtml}
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <h2 class="title">${product.Name}</h2>
+        </article>
+      `;
+
+      // Store slider HTML for reuse inside infoCard
+      card.dataset.slider = `
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            ${slidesHtml}
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      `;
+
+      container.appendChild(card);
+
+      // Inject swiper config
+      const configScript = document.createElement('script');
+      configScript.type = 'application/json';
+      configScript.className = 'swiper-config';
+      configScript.textContent = JSON.stringify(swiperConfig);
+      card.querySelector('.portfolio-details-slider').prepend(configScript);
+    }
+
+    container.addEventListener('click', function (e) {
+
+      // Prevent modal opening when clicking slider controls
+      if (e.target.closest('.swiper-button-next, .swiper-button-prev, .swiper-pagination')) {
+        return;
+      }
+
+      const card = e.target.closest('.product-card');
+      if (!card) return;
+
+      const key = card.getAttribute('data-key');
+      const product = plasticGranuels[key];
+
+      // Set title with info icon + tooltip
+      nameField.textContent = product.Name;
+      if(product.Icon){
+        nameField.innerHTML += `
+          <span class="info-icon1">ⓘ
+            <span class="tooltip1">${product.Icon}</span>
+          </span>
+        `;
+      }
+
+      // Inject slider into info card
+      cardImages.innerHTML = card.dataset.slider;
+
+      // Reinitialize swiper inside info card
+      new Swiper(cardImages.querySelector('.swiper'), {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        navigation: {
+          nextEl: cardImages.querySelector('.swiper-button-next'),
+          prevEl: cardImages.querySelector('.swiper-button-prev')
+        },
+        pagination: {
+          el: cardImages.querySelector('.swiper-pagination'),
+          clickable: true
+        }
+      });
+
+      // Build info table
+      let tableHtml = `<table><tbody>`;
+
+      for (let prop in product) {
+        if (prop === 'Name' || prop === 'Icon') continue;
+
+        if (typeof product[prop] === 'object') {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>
+                <ul>
+                  ${Object.values(product[prop]).map(v => `<li>${v}</li>`).join('')}
+                </ul>
+              </td>
+            </tr>
+          `;
+        } else {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>${product[prop]}</td>
+            </tr>
+          `;
+        }
+      }
+
+      tableHtml += `</tbody></table><br>`;
+      infoField.innerHTML = tableHtml;
+
+      // Show modal
+      overlay.classList.remove('hidden');
+      infoCard.classList.remove('hidden');
+
+      setTimeout(() => infoCard.classList.add('show'), 10);
+    });
+
+    /************************************
+    * CLOSE HANDLERS
+    ************************************/
+    closeButton.addEventListener('click', closeCard);
+    overlay.addEventListener('click', closeCard);
+
+    function closeCard() {
+      infoCard.classList.remove('show');
+      setTimeout(() => {
+        infoCard.classList.add('hidden');
+        overlay.classList.add('hidden');
+      }, 300);
+    }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

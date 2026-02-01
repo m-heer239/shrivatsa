@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kitchenware</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../gallery/logo/logo.jpg" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <script>
+    function data(){
+        const kitchenProducts = {
+          "KnifeSets" : {
+            "Name": "Knife Sets",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "1.1.jpg",
+              "Image3": "2.jpg",
+              "Image4": "2.1.jpg",
+              "Image5": "3.jpg",
+              "Image6": "3.1.jpg",
+              "Image7": "4.jpg",
+              "Image8": "4.1.jpg",
+              "Image9": "5.jpg",
+              "Image10": "5.1.jpg",
+              "Image11": "6.jpg",
+              "Image12": "6.1.jpg",
+              "Image13": "7.jpg"
+            },
+            "Short Description": "Shrivatsa knife sets are designed to cover <b>essential daily cutting and preparation tasks</b>, combining durability, balance, and long-lasting sharpness for home and professional kitchens.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"Essentials Knife Set",
+              "v2":"Premium Black Knife Set",
+              "v3":"Knife & Peeler Set"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"420-grade stainless steel blades",
+              "m2":"Food-contact suitable",
+              "m3":"Dishwasher safe (hand washing recommended to preserve edge life and coating)",
+            },
+            "Blade Performance Title": "<h5>Blade & Performance:</h5>",
+            "Blade Performance": {
+              "d1":"Conically ground cutting edges",
+              "d2":"Hardened at 1050°C · 55–56 HRC",
+              "d3":"Designed for smooth cutting with reduced effort",
+              "d4":"Maintains sharpness through repeated use"
+            },
+            "Handle Title": "<h5>Handle:</h5>",
+            "Handle": {
+              "d1":"Ergonomic, non-slip grip",
+              "d2":"Balanced for controlled everyday cutting"
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, restaurants, cafés, catering services, food prep areas, and retail kitchenware assortments."
+          },
+          "PerformanceSeriesKnives" : {
+            "Name": "Performance Series Knives",
+            "Images":{
+              "Image1": "2.3.jpg",
+              "Image2": "2.1.jpg",
+              "Image3": "3.3.jpg",
+              "Image4": "3.1.jpg",
+              "Image5": "4.3.jpg",
+              "Image6": "5.3.jpg",
+              "Image7": "5.1.jpg",
+              "Image8": "6.3.jpg",
+              "Image9": "6.2.jpg",
+              "Image10": "7.3.jpg",
+              "Image11": "7.2.jpg",
+              "Image12": "19.3.jpg",
+              "Image13": "19.2.jpg",
+              "Image14": "20.3.jpg",
+              "Image15": "20.2.jpg",
+              "Image16": "21.3.jpg",
+              "Image17": "21.2.jpg",
+              "Image18": "22.3.jpg",
+              "Image19": "22.2.jpg",
+              "Image20": "23.3.jpg",
+              "Image21": "23.2.jpg"
+            },
+            "Short Description": "Shrivatsa utility and performance knives are designed for <b>daily use as well as high-frequency food preparation</b>, offering speed, control, and durability across home and professional kitchens.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>JET Series - Performance Knives:</b> JET Chef Knife · JET Utility Knife · JET Precision Knife · JET Multi-Purpose Knife",
+              "v2":"<b>ORION Series:</b> ORION Signature Knife"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"420-grade stainless steel blades",
+              "m2":"Dishwasher safe (hand washing recommended to maintain edge life)",
+              "m3":"Food-contact suitable",
+            },
+            "Blade Performance Title": "<h5>Blade & Performance:</h5>",
+            "Blade Performance": {
+              "d1":"Conically ground cutting edges",
+              "d2":"Hardened at 1050°C · 55–56 HRC",
+              "d3":"Designed for clean slicing, chopping, and repetitive prep work",
+              "d4":"Stable edge performance during extended use",
+              "d5":"<b>Precision-engineered stainless-steel blade</b> with conical full-length and crosswise grinding, optimized to reduce initial cutting force by up to <b>40%</b>."
+            },
+            "Handle Title": "<h5>Handle:</h5>",
+            "Handle": {
+              "d1":"Textured grip engineered for secure handling during extended prep",
+              "d2":"Performance-focused finish designed for frequent, high-speed use"
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, restaurants, catering services, cloud kitchens, and food businesses requiring reliable knives for daily and high-volume preparation."
+          },
+          "SpecialtyKnives" : {
+            "Name": "Specialty Knives",
+            "Images":{
+              "Image1": "8.3.jpg",
+              "Image2": "8.2.jpg",
+              "Image3": "9.3.jpg",
+              "Image4": "9.2.jpg",
+              "Image5": "12.3.jpg",
+              "Image6": "12.2.jpg",
+              "Image7": "13.3.jpg",
+              "Image8": "13.2.jpg",
+              "Image9": "14.3.jpg",
+              "Image10": "14.2.jpg",
+              "Image11": "15.3.jpg",
+              "Image12": "15.2.jpg",
+              "Image13": "18.3.jpg",
+              "Image14": "18.2.jpg",
+              "Image15": "19.2.jpg",
+              "Image16": "19.1.jpg"
+            },
+            "Short Description": "Shrivatsa specialty knives are crafted for <b>specific cutting tasks</b> where precision and clean results are essential.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"PRETTY Series - Tomato Knife",
+              "v2":"PRETTY Series - Fruit Knife",
+              "v3":"JET Series  - Tomato Knife"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"420-grade stainless steel blades",
+              "m2":"Food-contact suitable under EU material standards",
+              "m3":"Dishwasher safe (hand wash recommended for edge longevity)",
+            },
+            "Blade Performance Title": "<h5>Blade & Performance:</h5>",
+            "Blade Performance": {
+              "d1":"Fine-edged blade geometry for delicate cuts",
+              "d2":"Hardened at 1050°C · 55–56 HRC",
+              "d3":"Conically ground edge for reduced cutting resistance",
+              "d4":"Designed to prevent crushing soft foods"
+            },
+            "Handle Title": "<h5>Handle:</h5>",
+            "Handle": {
+              "d1":"Lightweight, ergonomic grip",
+              "d2":"Controlled balance for precision slicing"
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, cafés, salad bars, professional chefs, and food businesses focused on presentation and precision."
+          },
+          "DesignSeriesKnives" : {
+            "Name": "Design Series Knives",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "1.1.jpg",
+              "Image3": "2.jpg",
+              "Image4": "2.1.jpg",
+              "Image5": "3.jpg",
+              "Image6": "3.1.jpg",
+              "Image7": "4.jpg",
+              "Image8": "4.1.jpg",
+              "Image9": "5.jpg",
+              "Image10": "5.1.jpg",
+              "Image11": "6.jpg",
+              "Image12": "6.1.jpg",
+              "Image13": "7.jpg",
+              "Image14": "7.1.jpg",
+              "Image15": "8.jpg",
+              "Image16": "8.1.jpg",
+              "Image17": "9.jpg",
+              "Image18": "9.1.jpg",
+              "Image19": "10.jpg",
+              "Image20": "10.1.jpg",
+              "Image21": "11.jpg",
+              "Image27": "11.1.jpg",
+              "Image28": "12.jpg",
+              "Image29": "12.2.jpg",
+              "Image30": "13.1.jpg",
+              "Image31": "14.1.jpg",
+              "Image32": "15.1.jpg",
+              "Image33": "16.1.jpg",
+              "Image34": "17.1.jpg",
+              "Image35": "18.jpg"
+            },
+            "Short Description": "Shrivatsa Design Series knives combine <b>reliable cutting performance with refined visual identity</b>, created for modern kitchens that value both function and aesthetics.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Pretty Series – Daily Use Knives: </b>Classic Knife · Classic Laser Knife · Classic Edge Knife · Classic Edge Laser Knife · Ultima Knife",
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"420-grade stainless steel blades",
+              "m2":"Food-contact suitable under EU material standards",
+              "m3":"Dishwasher safe (hand washing recommended to preserve finish and edge life)",
+            },
+            "Blade Performance Title": "<h5>Blade & Performance:</h5>",
+            "Blade Performance": {
+              "d1":"Precision-ground cutting edges",
+              "d2":"Hardened at <b>1050°C · 55–56 HRC</b>",
+              "d3":"<b>Blade angle options: 8° and 9° (variant dependent)</b>",
+              "d4":"Plain edge and laser-finished edge options",
+              "d5":"Smooth, controlled slicing with reduced cutting force",
+              "d6":"Maintains sharpness with regular use"
+            },
+            "Handle Title": "<h5>Handle & Finish:</h5>",
+            "Handle": {
+              "d1":"Smooth, contoured handle designed for light, precise control",
+              "d2":"Visually refined finishes intended to complement modern kitchen interiors"
+            },
+            "Best fit for": "<b>Best fit for:</b> Modern home kitchens, premium retail buyers, cafés, lifestyle-focused kitchens, and design-conscious users."
+          },
+          "SquareChopper": {
+            "Name": "Square Chopper",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg"
+            },
+            "Short Description": "Shrivatsa Square Chopper is built for <b>fast, controlled everyday food preparation</b> in home and professional kitchens, using <b>virgin food-grade materials</b> and a <b>precision-hardened stainless steel blade</b>.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Capacity:</b> 600 ml · 900 ml",
+              "v2":"<b>Operation:</b> Manual pull-cord system"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Virgin food-grade plastic body",
+              "m2":"<b>BPA-free · Dishwasher safe</b>",
+              "m3":"Food grade stainless steel blade",
+              "m4":"Suitable for food contact under EU material standards",
+            },
+            "Blade Performance Title": "<h5>Blade & Performance:</h5>",
+            "Blade Performance": {
+              "d1":"Conically ground blade",
+              "d2":"Equipped with high-quality sharp stainless-steel blades for easy chopping",
+              "d3":"Optimised cutting angle for reduced effort"
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Smooth pull-cord operation",
+              "d2":"Anti-skid base for stability",
+              "d3":"Easy to clean and reassemble"
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, cloud kitchens, quick-service restaurants, catering operations, and food businesses needing reliable manual chopping without electricity."
+          },
+          "PushChopper" : {
+            "Name": "Push Chopper",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+            },
+            "Short Description": "Shrivatsa Push Chopper is designed for <b>quick, hands-on food preparation</b> using a <b>direct push-top mechanism</b>, offering controlled chopping with consistent results for everyday kitchen use.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Capacity:</b> 800 ml · 1100 ml",
+              "v2":"<b>Operation:</b> Push-top system"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Virgin food-grade plastic body",
+              "m2":"<b>BPA-free · Dishwasher safe</b>",
+              "m3":"Food grade stainless steel blade",
+              "m4":"Suitable for food contact under EU material standards",
+            },
+            "Blade Performance Title": "<h5>Blade & Performance:</h5>",
+            "Blade Performance": {
+              "d1":"Precision-ground stainless steel blade",
+              "d2":"Equipped with high-quality sharp stainless-steel blades for easy chopping",
+              "d3":"Designed for efficient chopping with downward pressure"
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Simple push operation for quick prep",
+              "d2":"Stable base for safe countertop use",
+              "d3":"Easy to disassemble and clean"
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, quick-service restaurants, cloud kitchens, catering setups, and food businesses needing fast manual chopping without electricity."
+          },
+          "HandyChopper" : {
+            "Name": "Handy Chopper",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg"
+            },
+            "Short Description": "Shrivatsa Handy Chopper is designed for <b>compact, everyday food preparation</b>, offering efficient chopping performance in a smaller, easy-to-handle format for both home and professional kitchens.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Capacity:</b> 450 ml · 950 ml",
+              "v2":"<b>Operation:</b> Manual pull-cord system"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Virgin food-grade plastic body",
+              "m2":"<b>BPA-free · Dishwasher safe</b>",
+              "m3":"Food grade stainless steel blade",
+              "m4":"Suitable for food contact under EU material standards",
+            },
+            "Blade Performance Title": "<h5>Blade & Performance:</h5>",
+            "Blade Performance": {
+              "d1":"Precision-ground stainless steel blade",
+              "d2":"Equipped with high-quality sharp stainless-steel blades for easy chopping",
+              "d3":"Designed for consistent chopping with minimal effort"
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Compact design for easy storage",
+              "d2":"Smooth pull-cord operation",
+              "d3":"Stable base and easy cleaning"
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, cafes, small food businesses, cloud kitchens, and users needing a compact manual chopper for daily preparation."
+          },
+          "SiliconeIceTray" : {
+            "Name": "Silicone Ice Tray",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg"
+            },
+            "Short Description": "Shrivatsa Silicone Ice Trays are designed for <b>safe, flexible, and hygienic ice preparation</b>, using food-grade silicone suitable for everyday kitchen use.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Shape:</b> Square · Round"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Food-grade silicone",
+              "m2":"<b>BPA-free · Dishwasher safe</b>",
+              "m3":"Suitable for food contact under EU material standards",
+              "m4":"<b>Freezer safe (not oven safe)</b>",
+            },
+            "Design Function Title": "<h5>Design & Function:</h5>",
+            "Design Function": {
+              "d1":"Flexible silicone for easy ice release",
+              "d2":"Maintains shape without cracking",
+              "d3":"Odour-resistant and easy to clean"
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for ice cubes and frozen portions",
+              "d2":"Stackable for freezer organization",
+              "d3":"Designed for repeated daily use"
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, cafés, bars, restaurants, catering setups, and food businesses requiring safe and reusable ice preparation."
+          },
+          "ClassicSpoonSet" : {
+            "Name": "Classic Spoon Set",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg",
+              "Image7": "7.jpg",
+              "Image8": "8.jpg",
+              "Image9": "9.jpg",
+              "Image10": "10.jpg",
+              "Image11": "11.jpg"
+            },
+            "Short Description": "Shrivatsa Classic Spoon Set is designed for <b>complete everyday dining</b>, offering durability, balance, and a uniform finish suitable for regular home use and professional food service.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Set:</b> 26 pieces"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Food grade stainless steel blade",
+              "m2":"<b>Dishwasher safe</b>",
+              "m3":"Food-contact suitable",
+              "m4":"Rust-resistant with proper care",
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Mirror-polished surface",
+              "d2":"Balanced weight for comfortable handling",
+              "d3":"Smooth edges for safe daily use"
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for daily meals and formal dining",
+              "d2":"Easy to clean and maintain"
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, restaurants, catering services, hotels, and institutional dining."
+          },
+          "IceCreamSpoonSet" : {
+            "Name": "Ice Cream Spoon Set",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg",
+              "Image7": "7.jpg"
+            },
+            "Short Description": "Shrivatsa Ice Cream Spoon Set is designed for <b>desserts and cold servings</b>, offering strength and control with a compact, ergonomic form.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Set:</b> 6 pieces"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Food grade stainless steel blade",
+              "m2":"<b>Dishwasher safe</b>",
+              "m3":"Food-contact suitable",
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Ergonomic shape for dessert use",
+              "d2":"Mirror-polished surface",
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for ice cream, desserts, and small servings",
+            },
+            "Best fit for": "<b>Best fit for:</b> Homes, cafés, dessert counters, restaurants, and catering services."
+          },
+          "SpoonSet" : {
+            "Name": "Spoon Set",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg"
+            },
+            "Short Description": "Shrivatsa Spoon Set is designed for <b>everyday dining and table service</b>, offering balanced weight, durability, and a clean finish suitable for both home and professional use.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Set:</b> 6 pieces"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Food-grade stainless steel",
+              "m2":"<b>Dishwasher safe</b>",
+              "m3":"Food-contact suitable",
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Mirror-polished surface",
+              "d2":"Balanced construction for comfortable handling",
+              "d3":"Smooth edges for regular use"
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for daily meals, desserts, and table service",
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, restaurants, catering operations, hotels, and hospitality environments."
+          },
+          "TeaBabySpoonSet" : {
+            "Name": "Tea & Baby Spoon Set",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg",
+              "Image7": "7.jpg"
+            },
+            "Short Description": "Shrivatsa Tea & Baby Spoon Set is designed for <b>light servings and gentle everyday use</b>, combining refined proportions with smooth edges for safe and comfortable handling across age groups.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Set:</b> 6 pieces"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Food-grade stainless steel",
+              "m2":"<b>Dishwasher safe</b>",
+              "m3":"Food-contact suitable",
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Slim, lightweight profile",
+              "d2":"Mirror-polished finish",
+              "d3":"Smooth, rounded edges for safe use"
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for tea, coffee, desserts",
+              "d2":"Suitable for baby feeding and toddler use"
+            },
+            "Best fit for": "<b>Best fit for:</b> Homes, cafés, offices, hotels, childcare facilities, and environments requiring small, safe, easy-to-handle spoons."
+          },
+          "ForkSet" : {
+            "Name": "Fork Set",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg"
+            },
+            "Short Description": "Shrivatsa Fork Set is designed for <b>everyday dining</b>, offering strength and consistent form for regular and professional use.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"<b>Set:</b> 6 pieces"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Food grade stainless steel blade",
+              "m2":"<b>Dishwasher safe</b>",
+              "m3":"Food-contact suitable",
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Mirror-polished finish",
+              "d2":"Balanced and durable construction",
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for daily meals and table service",
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, restaurants, catering operations, and hospitality environments."
+          },
+          "SwanMultiStand" : {
+            "Name": "Swan Multi Stand",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg"
+            },
+            "Short Description": "Shrivatsa Swan Multi Stand is designed for <b>organized storage and countertop presentation</b>, combining durability with a clean stainless steel finish.",
+            "Available Variants Title": "<h5>Available Variant:</h5>",
+            "Available Variants": {
+              "v1":"Single unit"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Food grade stainless steel blade",
+              "m2":"<b>Dishwasher safe</b>",
+              "m3":"Food-contact suitable",
+              "m4":"Rust-resistant with proper care",
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Mirror-polished surface",
+              "d2":"Stable, weighted base",
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for holding spoons, cutlery, pens, or accessories",
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, dining tables, offices, cafés, and hospitality spaces."
+          },
+          "SwanStandSpoonSet" : {
+            "Name": "Swan Stand with Spoon Set",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg"
+            },
+            "Short Description": "Shrivatsa Swan Stand with Spoon Set offers a <b>complete serving and storage solution</b>, combining a stainless steel stand with matching spoons.",
+            "Available Variants Title": "<h5>Available Variant:</h5>",
+            "Available Variants": {
+              "v1":"Stand with 6 spoons"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Food grade stainless steel blade<b>(stand + spoons)</b>",
+              "m2":"<b>Dishwasher safe</b>",
+              "m3":"Food-contact suitable",
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Mirror-polished surface",
+              "d2":"Heavy, stable base for countertop use",
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for dining and serving applications",
+            },
+            "Best fit for": "<b>Best fit for:</b> Home dining, restaurants, hotels, catering services, and premium table setups."
+          },
+          "SwanPenStand" : {
+            "Name": "Swan Pen Stand",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg"
+            },
+            "Short Description": "Shrivatsa Swan Pen Stand is designed for <b>workspace organization</b>, offering a durable and elegant stainless steel solution.",
+            "Available Variants Title": "<h5>Available Variant:</h5>",
+            "Available Variants": {
+              "v1":"Single unit"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Rust-resistant finish",
+              "m2":"<b>Stainless steel</b>"
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Glossy polished surface",
+              "d2":"Stable, weighted base",
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for pens, stationery, or desk accessories",
+            },
+            "Best fit for": "<b>Best fit for:</b> Offices, reception desks, workspaces, and corporate gifting."
+          },
+          "MetalAshtray" : {
+            "Name": "Metal Ashtray",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg"
+            },
+            "Short Description": "Shrivatsa Metal Ashtray is designed for <b>durable and hygienic use</b> in indoor and outdoor environments.",
+            "Available Variants Title": "<h5>Available Variant:</h5>",
+            "Available Variants": {
+              "v1":"Single unit"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Rust-resistant",
+              "m2":"<b>Stainless steel</b>",
+              "m3":"Easy to clean",
+            },
+            "Design Finish Title": "<h5>Design & Finish:</h5>",
+            "Design Finish": {
+              "d1":"Wide ash-holding capacity",
+              "d2":"Stable, anti-slip base",
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for repeated daily use",
+            },
+            "Best fit for": "<b>Best fit for:</b> Homes, patios, cafes, restaurants, smoking zones, and hospitality spaces."
+          },
+          "StorageContainersWithLids" : {
+            "Name": "Storage Containers with Lids",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg"
+            },
+            "Tagline": "(Standard Snap-Fit & One-Touch Opening)",
+            "Short Description": "Shrivatsa storage containers are designed for <b>organized, hygienic food storage</b> across home kitchens and professional food service environments. The range includes <b>standard snap-fit lids</b> and <b>one-touch opening systems</b>, allowing flexibility based on daily usage needs.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"Multiple sizes · Set-based configurations",
+              "v2":"Lid options: Snap-fit lid · One-touch lid"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Virgin food-grade plastic",
+              "m2":"<b>BPA-free · Dishwasher safe</b>",
+              "m3":"Suitable for food contact under EU material standards",
+            },
+            "Design Finish Title": "<h5>Design & Function:</h5>",
+            "Design Finish": {
+              "d1":"Transparent body for easy content visibility",
+              "d2":"Secure sealing to help maintain freshness",
+              "d3":"Stackable design for efficient space use"
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for grains, snacks, dry and semi-dry food storage",
+            },
+            "Best fit for": "<b>Best fit for:</b> Home kitchens, restaurants, cafés, cloud kitchens, food preparation areas, and organized pantry storage."
+          },
+          "LiquidSoapDispenser" : {
+            "Name": "Liquid Soap Dispenser",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg"
+            },
+            "Short Description": "Shrivatsa Liquid Soap Dispenser is designed for <b>controlled and hygienic dispensing</b> in kitchens and wash areas.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"Standard size"
+            },
+            "Material Safety Title": "<h5>Material & Safety:</h5>",
+            "Material Safety": {
+              "m1":"Durable plastic body",
+              "m2":"Easy-to-clean surface",
+            },
+            "Design Finish Title": "<h5>Design & Function:</h5>",
+            "Design Finish": {
+              "d1":"Smooth pump-action mechanism",
+              "d2":"Transparent or tinted body options",
+            },
+            "Everyday Use Title": "<h5>Everyday Use:</h5>",
+            "Everyday Use": {
+              "d1":"Suitable for liquid soap, hand wash",
+            },
+            "Best fit for": "<b>Best fit for:</b> Homes, kitchens, restaurants, cafés, washrooms, and hospitality environments."
+          }
+        }
+        return kitchenProducts;
+    }
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Append
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Updated: May 18 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../gallery/logo/logo.jpg" alt="">
+        <div class="logo-text">
+          <h1 class="sitename">Shrivatsa</h1>
+          <p>Powered by SSIE</p> 
+        </div><span></span>  
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html" class="">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#portfolio">Products</a></li>
+          <li><a href="../index.html#owner">Owner</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="" class=""></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Kitchenware</h1>
+              <p class="mb-0">
+                <b>Food-grade plastic kitchenware designed for durability, safety, and modern living.</b><br>
+                Our plastic kitchenware range is developed using food-grade, BPA-free materials that meet everyday functional and safety requirements. 
+                Designed for durability and ease of use, Shrivatsa kitchenware supports modern households and food service environments where hygiene, reliability, and practicality matter. 
+                The collection balances clean design with long-term performance.
+                <span class="info-icon" aria-label="Information">ⓘ
+                <span class="tooltip">
+                  Product specifications and food-contact compliance details are available upon request.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html#portfolio">Home</a></li>
+            <li class="current">Kitchenware</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Kitchenware/Main Frame/Kitchenware.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Kitchenware/Main Frame/Classic spoon set (2).jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Kitchenware/Main Frame/18.1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Kitchenware/Main Frame/5.3.jpg" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+
+      <div class="container" id="mainContent">
+        <div class="row gy-4" id="productContainer">
+
+          
+            <!-- Product cards will be inserted here -->
+          
+          <div id="overlay" class="hidden"></div>
+          <div id="infoCard" class="info-card hidden">
+            <button id="closeButton" class="close-btn">X</button>
+            <!--<h2 id="cardHeader"></h2>
+            <p id="cardBody"></p>-->
+            <div class="info-content">
+              <div class="info-left" id="cardImages"></div>
+              <div class="info-right scroll-area">
+                <h2 id="cardHeader"></h2>
+                <div id="cardBody"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Posts Section -->
+        </div>
+
+      </div>
+
+    </section><!-- /portfolio Details Section -->
+
+  </main>
+
+  <a href="https://wa.me/4917648060918" 
+   class="whatsapp-float" 
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp Chat">
+  </a>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Shrivatsa</span>
+          </a>
+          <p>At Shrivatsa, we bridge European markets with the world, offering expert import/export services focused on excellence and lasting relationships. Our experienced team ensures smooth, reliable transactions with the highest standards of quality and integrity.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/indiamart.png" width="22"></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/alibaba.png" width="22"></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../privacy-policy.html#terms-conditions">Terms & Conditions</a></li>
+            <li><a href="../privacy-policy.html#compliance-regulatory-information">Compliance & Regulatory Information</a></li>
+            <li><a href="../privacy-policy.html#legal-information-imprint">Legal Information / Imprint</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="../services/export-services.html">Export Services</a></li>
+            <li><a href="../services/import-services.html">Import Services</a></li>
+            <li><a href="../services/distribution-services.html">Distribution Services</a></li>
+            <li><a href="../services/negotiation-partnership-strategy.html">Negotiation & Partnership Strategy</a></li>
+            <li><a href="../services/market-research-consultancy.html">Market Research & Consultancy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us <i class="bi bi-headset help-icon"></i></h4>
+          <p><a href="../location/superSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Munich, Germany</p>
+          <p><a href="../location/shreeSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Office No. 304, Shree Hari Empire,</p>
+          <p style="padding-left: 20px;">Nr. Tulsi Market, Raiya Road,</p>
+          <p style="padding-left: 20px;">Rajkot, Gujarat, India 360005</p>
+          <p class="mt-4"><a href="tel:+4917648060918"><i class="bi bi-telephone me-2"></i></a><span>+49 176 48060918</span></p>
+          <p><a href="mailto:info@supersonicimportexport.com"><i class="bi bi-envelope me-2"></i></a><span>info@supersonicimportexport.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Super Sonic Import Export</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <br><h4 style="font-family: Lucida Handwriting">Made with Love and Passion</h4>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script>
+    const container = document.getElementById('productContainer');
+    const infoCard = document.getElementById('infoCard');
+    const overlay = document.getElementById('overlay');
+    const nameField = document.getElementById('cardHeader');
+    const infoField = document.getElementById('cardBody');
+    const cardImages = document.getElementById('cardImages');
+    const closeButton = document.getElementById('closeButton');
+
+    // Get data
+    const plasticGranuels = data();
+
+    /************************************
+    * BUILD PRODUCT CARDS
+    ************************************/
+    for (let key in plasticGranuels) {
+      const product = plasticGranuels[key];
+
+      const swiperConfig = {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      };
+
+      const card = document.createElement('div');
+      card.className = 'col-lg-4 product-card';
+      card.setAttribute('data-key', key);
+
+      const slidesHtml = buildSlides(product);
+
+      card.innerHTML = `
+        <article>
+          <div class="post-img">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                ${slidesHtml}
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <h2 class="title">${product.Name}</h2>
+        </article>
+      `;
+
+      // Store slider HTML for reuse inside infoCard
+      card.dataset.slider = `
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            ${slidesHtml}
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      `;
+
+      container.appendChild(card);
+
+      // Inject swiper config
+      const configScript = document.createElement('script');
+      configScript.type = 'application/json';
+      configScript.className = 'swiper-config';
+      configScript.textContent = JSON.stringify(swiperConfig);
+      card.querySelector('.portfolio-details-slider').prepend(configScript);
+    }
+
+    container.addEventListener('click', function (e) {
+
+      // Prevent modal opening when clicking slider controls
+      if (e.target.closest('.swiper-button-next, .swiper-button-prev, .swiper-pagination')) {
+        return;
+      }
+
+      const card = e.target.closest('.product-card');
+      if (!card) return;
+
+      const key = card.getAttribute('data-key');
+      const product = plasticGranuels[key];
+
+      // Set title with info icon + tooltip
+      nameField.textContent = product.Name;
+      if(product.Icon){
+        nameField.innerHTML += `
+          <span class="info-icon1">ⓘ
+            <span class="tooltip1">${product.Icon}</span>
+          </span>
+        `;
+      }
+
+      // Inject slider into info card
+      cardImages.innerHTML = card.dataset.slider;
+
+      // Reinitialize swiper inside info card
+      new Swiper(cardImages.querySelector('.swiper'), {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        navigation: {
+          nextEl: cardImages.querySelector('.swiper-button-next'),
+          prevEl: cardImages.querySelector('.swiper-button-prev')
+        },
+        pagination: {
+          el: cardImages.querySelector('.swiper-pagination'),
+          clickable: true
+        }
+      });
+
+      // Build info table
+      let tableHtml = `<table><tbody>`;
+
+      for (let prop in product) {
+        if (prop === 'Name' || prop === 'Icon') continue;
+
+        if (typeof product[prop] === 'object') {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>
+                <ul>
+                  ${Object.values(product[prop]).map(v => `<li>${v}</li>`).join('')}
+                </ul>
+              </td>
+            </tr>
+          `;
+        } else {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>${product[prop]}</td>
+            </tr>
+          `;
+        }
+      }
+
+      tableHtml += `</tbody></table><br>`;
+      infoField.innerHTML = tableHtml;
+
+      // Show modal
+      overlay.classList.remove('hidden');
+      infoCard.classList.remove('hidden');
+
+      setTimeout(() => infoCard.classList.add('show'), 10);
+    });
+
+    /************************************
+    * CLOSE HANDLERS
+    ************************************/
+    closeButton.addEventListener('click', closeCard);
+    overlay.addEventListener('click', closeCard);
+
+    function closeCard() {
+      infoCard.classList.remove('show');
+      setTimeout(() => {
+        infoCard.classList.add('hidden');
+        overlay.classList.add('hidden');
+      }, 300);
+    }
+    function buildSlides(product) {
+      if (!product.Images) return "";
+      return Object.values(product.Images)
+        .map(src => `<div class="swiper-slide"><img src="../gallery/products/Kitchenware/${product.Name}/${src}" alt="${product.Name}"></div>`)
+        .join("");
+    }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

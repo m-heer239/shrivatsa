@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fashion Outfits</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../gallery/logo/logo.jpg" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <script>
+    // Show popup on page load
+    window.onload = function () {
+        document.getElementById("popupOverlay").style.display = "flex";
+    };
+
+    // Close popup
+    function closePopup() {
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+    
+    function data(){
+        const electronicGadgets = {
+          "USBChargingCables": {
+            "Name": "USB Charging Cables (Type-C / Micro USB / iPhone)",
+            "Tagline": "Fast. Durable. Universal.",
+            "Short Description": "Shrivatsa USB cables are built for speed and strength — available in Type-C, Micro USB, and iPhone-compatible versions.",
+            "Material": "Braided/Nylon-Coated or PVC",
+            "Specifications": "Charging Speed: Up to 3.0A, Lengths: 1m / 1.5m / 2m, Reinforced Connectors",
+            "SEO Keywords": "shrivatsa type-c cable, fast charging usb cable, iphone charging cable india",
+            "Description": "Shrivatsa USB Cables — universal, fast-charging cables built to last."
+          },
+          "WallChargers": {
+            "Name": "Wall Chargers / Adapters",
+            "Tagline": "Plug In to Premium Power.",
+            "Short Description": "Shrivatsa wall chargers offer efficient, safe charging with multi-port options and fast output.",
+            "Material": "",
+            "Specifications": "Input: AC 100-240V, Output: 2.4A / 3.0A (Single/Dual Port), Models: USB-A / USB-C / Dual Output, Built-in Overheat Protection",
+            "SEO Keywords": "shrivatsa mobile charger, usb wall adapter, fast charging plug",
+            "Description": "Power up with Shrivatsa Wall Chargers — fast, compact, and reliable adapters."
+          },
+          "EarphonesWithMic": {
+            "Name": "Earphones with Mic (Wired)",
+            "Tagline": "Clear Sound. Every Word.",
+            "Short Description": "Shrivatsa wired earphones deliver clear audio and crisp mic quality — perfect for calls, music, or gaming.",
+            "Material": "",
+            "Specifications": "Connector: 3.5mm Audio Jack, Mic: Built-in with Click Button, Cable: Tangle-Free Design, Comfort-Fit Earpieces",
+            "SEO Keywords": "shrivatsa wired earphones, earphones with mic, 3.5mm headset india",
+            "Description": "Experience crisp audio with Shrivatsa Wired Earphones — clear mic and deep sound."
+          },
+          "EarphonesWithMic": {
+            "Name": "Wireless Neckbands",
+            "Tagline": "Freedom to Move. Power to Play.",
+            "Short Description": "Shrivatsa Neckbands combine wireless freedom with rich bass and long battery life — built for your hustle.",
+            "Material": "",
+            "Specifications": "Connectivity: Bluetooth 5.0+, Playback Time: 15-25 hrs, Charging: Type-C / Micro USB, Features: Noise Isolation, Sweatproof",
+            "SEO Keywords": "shrivatsa wireless neckband, bluetooth earphones india, long battery neckband",
+            "Description": "Shrivatsa Wireless Neckbands — powerful sound with all-day comfort."
+          },
+          "BluetoothSpeakers": {
+            "Name": "Bluetooth Speakers",
+            "Tagline": "Big Sound. Small Box.",
+            "Short Description": "Shrivatsa Bluetooth Speakers deliver room-filling sound in a portable design — perfect for indoors or on-the-go.",
+            "Material": "",
+            "Specifications": "Connectivity: Bluetooth 5.0, AUX, TF Card, Battery: 1200mAh-2000mAh, Playback Time: 4-10 hrs, Compact, Shock-Resistant Build",
+            "SEO Keywords": "shrivatsa bluetooth speaker, portable wireless speaker, mini sound system",
+            "Description": "Play loud and clear with Shrivatsa Bluetooth Speakers — compact and powerful."
+          },
+          "CarChargers": {
+            "Name": "Car Chargers (Dual USB)",
+            "Tagline": "Charge on the Drive.",
+            "Short Description": "Shrivatsa Car Chargers are compact yet powerful — charge two devices at once with fast output on the go.",
+            "Material": "",
+            "Specifications": "Input: DC 12-24V, Output: Dual USB (2.4A total), Safety: Overcurrent and Overheat Protection, Compatible with All Cars",
+            "SEO Keywords": "shrivatsa car charger, usb car adapter, dual port fast car charger",
+            "Description": "Drive smart with Shrivatsa Dual USB Car Chargers — fast charging, compact design."
+          }
+        }
+        return electronicGadgets;
+    }
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Append
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Updated: May 18 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+  <!-- Popup Overlay -->
+  <div id="popupOverlay" class="popup-overlay">
+    <div class="popup-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Launching Shortly</h2>
+        <p>
+            Powering the Connected World.</br></br>
+            Chargers, accessories, audio — we link innovation with distribution.</br>
+            Our electronics division is under development, designed to connect global buyers and Indian technology suppliers.</br></br>
+            ⚙️ Explore partnership opportunities while our new interface takes shape.
+        </p>
+    </div>
+  </div>
+
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../gallery/logo/logo.jpg" alt="">
+        <div class="logo-text">
+          <h1 class="sitename">Shrivatsa</h1>
+          <p>Powered by SSIE</p> 
+        </div><span></span>  
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html" class="">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#portfolio">Products</a></li>
+          <li><a href="../index.html#owner">Owner</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="" class=""></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Fashion Outfits</h1>
+              <p class="mb-0">
+                <b>Responsibly produced apparel combining modern design, comfort, and sustainable materials.</b><br>
+                Shrivatsa Fashion represents a balanced approach to apparel sourcing, combining contemporary design with responsible material choices. 
+                Our collections are developed with a focus on comfort, functionality, and ethical production practices. We support private label and bulk apparel requirements while maintaining consistent quality and sustainability considerations across the supply chain.
+                <span class="info-icon" aria-label="Information">ⓘ
+                <span class="tooltip">
+                  Material details, production standards, and customization options are available upon request.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html#portfolio">Home</a></li>
+            <li class="current">Fashion Outfits</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Fashion/main Frame/Fashion.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Fashion/main Frame/Shirts.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Fashion/main Frame/Tshirt(V shape, Round).1.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Fashion/main Frame/Office Pant.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../gallery/products/Fashion/Tshirt(V shape, Round).2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../gallery/products/Fashion/Jacket – Leather,Oversize,Cotton.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../gallery/products/Fashion/Tight Jeans.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+          <div id="about" class="about div">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-xl-center gy-5">
+          
+            <div id="privacy-policy">
+              </br></br>
+              <h3>Apparel & Outfits</h3>
+              <h2>Custom Clothing Manufacturing</h2>
+              <p><b>Design freedom. Industrial precision. Delivered at scale.</b></p>
+              <p>Shrivatsa Apparel exists to manufacture <b>what does not yet exist.</b></br>
+                We partner with brands, businesses, and organizations that require <b>custom-built clothing</b>, produced with discipline, consistency, and absolute respect for design intent.</p>
+              <p>We do not sell collections.<br>We <b>manufacture capability</b>.</p>
+              <p>From concept to bulk production, Shrivatsa delivers <b>made-to-order apparel</b> engineered for repeatability, fit accuracy, and long-term brand growth.</p>
+            </div>
+            <div id="terms-conditions">  
+              <h2 data-aos="fade-up" data-aos-delay="200">What We Manufacture</h2>
+              <p data-aos="fade-up" data-aos-delay="200">The following categories illustrate our <b>manufacturing range</b>.<br>Every garment is produced <b>exclusively to buyer specification</b>.</p>
+            </div>  
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="300">Everyday & Lifestyle Apparel</h2>
+              <ul data-aos="fade-up" data-aos-delay="300">
+                <li>Precision-fit T-shirts (regular, oversized, active)</li>
+                <li>Shirts engineered for structure and comfort</li>
+                <li>Sweatshirts and hooded layers</li>
+              </ul>
+            </div>
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="400">Corporate & Professional Uniforms</h2>
+              <ul data-aos="fade-up" data-aos-delay="400">
+                <li>Office and corporate wear</li>
+                <li>Hospitality and service uniforms</li>
+                <li>Industrial and operational workwear</li>
+              </ul>
+            </div>
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="500">Brand & Promotional Apparel</h2>
+              <ul data-aos="fade-up" data-aos-delay="500">
+                <li>Event and campaign merchandise</li>
+                <li>Retail-ready brand apparel</li>
+                <li>Private-label collections</li>
+              </ul>
+            </div>
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="600">Cultural & Design-Led Garments</h2>
+              <ul data-aos="fade-up" data-aos-delay="600">
+                <li>Ethnic and heritage-inspired clothing</li>
+                <li>Contemporary adaptations for modern markets</li>
+              </ul>
+            </div>
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="700">Kidswear & Coordinated Collections</h2>
+              <ul data-aos="fade-up" data-aos-delay="700">
+                <li>Kids casualwear</li>
+                <li>Family and group apparel concepts</li>
+              </ul>
+            </div>
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="800">How We Manufacture</h2>
+              <p data-aos="fade-up" data-aos-delay="800"><b>Production Model</b></p>
+              <ul data-aos="fade-up" data-aos-delay="800">
+                <li>Made-to-order manufacturing</li>
+                <li>Scalable volumes aligned with demand cycles</li>
+              </ul>
+              <p data-aos="fade-up" data-aos-delay="800"><b>Customization Depth</b></p>
+              <ul data-aos="fade-up" data-aos-delay="800">
+                <li>Fabric and material selection</li>
+                <li>Custom sizing and grading</li>
+                <li>Private labeling and brand tagging</li>
+                <li>Packaging engineered for retail or distribution</li>
+              </ul>
+              <p data-aos="fade-up" data-aos-delay="800"><b>Operational Discipline</b></p>
+              <ul data-aos="fade-up" data-aos-delay="800">
+                <li>Quality-controlled production lines</li>
+                <li>Repeat-order consistency</li>
+                <li>Timeline reliability aligned with European supply expectations</li>
+              </ul>
+            </div>
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="900">Who This Is Built For</h2>
+              <p data-aos="fade-up" data-aos-delay="900"><b>Best Fit For:</b><br>Fashion brands, private-label sellers, distributors, lifestyle chains, corporate buyers, merchandisers, and B2B customers who value <b>control over creation</b>, not off-the-shelf compromise.</p>
+            </div>
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="1000">Responsibility by Design</h2>
+              <p data-aos="fade-up" data-aos-delay="1000">Shrivatsa works with export-oriented manufacturing partners experienced in <b>international quality standards.</b><br>
+              Materials, processes, and workflows are selected to align with <b>EU market expectations</b> for safety, durability, and responsible production.<br>
+                Compliance documentation and material declarations are available <b>based on project scope</b>.
+            </p>
+            </div>
+            <div id="compliance-regulatory-information">
+              <h2 data-aos="fade-up" data-aos-delay="1100">The Shrivatsa Approach</h2>
+              <p data-aos="fade-up" data-aos-delay="1100">Most manufacturers ask what you want to make.<br>
+                  We ask <b>what you want to build long-term</b>.</p>
+              <p data-aos="fade-up" data-aos-delay="1100">Shrivatsa Apparel is designed for partners who think beyond seasons — <br>and build brands that last.<br>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+        </div>
+
+      </div>
+
+    </section><!-- /portfolio Details Section -->
+
+  </main>
+
+  <a href="https://wa.me/4917648060918" 
+   class="whatsapp-float" 
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp Chat">
+  </a>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Shrivatsa</span>
+          </a>
+          <p>At Shrivatsa, we bridge European markets with the world, offering expert import/export services focused on excellence and lasting relationships. Our experienced team ensures smooth, reliable transactions with the highest standards of quality and integrity.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/indiamart.png" width="22"></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/alibaba.png" width="22"></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../privacy-policy.html#terms-conditions">Terms & Conditions</a></li>
+            <li><a href="../privacy-policy.html#compliance-regulatory-information">Compliance & Regulatory Information</a></li>
+            <li><a href="../privacy-policy.html#legal-information-imprint">Legal Information / Imprint</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="../services/export-services.html">Export Services</a></li>
+            <li><a href="../services/import-services.html">Import Services</a></li>
+            <li><a href="../services/distribution-services.html">Distribution Services</a></li>
+            <li><a href="../services/negotiation-partnership-strategy.html">Negotiation & Partnership Strategy</a></li>
+            <li><a href="../services/market-research-consultancy.html">Market Research & Consultancy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us <i class="bi bi-headset help-icon"></i></h4>
+          <p><a href="../location/superSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Munich, Germany</p>
+          <p><a href="../location/shreeSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Office No. 304, Shree Hari Empire,</p>
+          <p style="padding-left: 20px;">Nr. Tulsi Market, Raiya Road,</p>
+          <p style="padding-left: 20px;">Rajkot, Gujarat, India 360005</p>
+          <p class="mt-4"><a href="tel:+4917648060918"><i class="bi bi-telephone me-2"></i></a><span>+49 176 48060918</span></p>
+          <p><a href="mailto:info@supersonicimportexport.com"><i class="bi bi-envelope me-2"></i></a><span>info@supersonicimportexport.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Super Sonic Import Export</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <br><h4 style="font-family: Lucida Handwriting">Made with Love and Passion</h4>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script>
+    const container = document.getElementById('productContainer');
+    const infoCard = document.getElementById('infoCard');
+    const overlay = document.getElementById('overlay');
+    const nameField = document.getElementById('cardHeader');
+    const infoField = document.getElementById('cardBody');
+    const cardImages = document.getElementById('cardImages');
+    const closeButton = document.getElementById('closeButton');
+
+    // Get data
+    const plasticGranuels = data();
+
+    /************************************
+    * BUILD PRODUCT CARDS
+    ************************************/
+    for (let key in plasticGranuels) {
+      const product = plasticGranuels[key];
+
+      const swiperConfig = {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      };
+
+      const card = document.createElement('div');
+      card.className = 'col-lg-4 product-card';
+      card.setAttribute('data-key', key);
+
+      card.innerHTML = `
+        <article>
+          <div class="post-img">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="../assets/img/portfolio/app-1.jpg"></div>
+                <div class="swiper-slide"><img src="../assets/img/portfolio/product-1.jpg"></div>
+                <div class="swiper-slide"><img src="../assets/img/portfolio/branding-1.jpg"></div>
+                <div class="swiper-slide"><img src="../assets/img/portfolio/books-1.jpg"></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <h2 class="title">${product.Name}</h2>
+          
+        </article>
+      `;
+
+      // Store slider HTML for reuse inside infoCard
+      card.dataset.slider = `
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="../assets/img/portfolio/app-1.jpg"></div>
+            <div class="swiper-slide"><img src="../assets/img/portfolio/product-1.jpg"></div>
+            <div class="swiper-slide"><img src="../assets/img/portfolio/branding-1.jpg"></div>
+            <div class="swiper-slide"><img src="../assets/img/portfolio/books-1.jpg"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      `;
+
+      container.appendChild(card);
+
+      // Inject swiper config
+      const configScript = document.createElement('script');
+      configScript.type = 'application/json';
+      configScript.className = 'swiper-config';
+      configScript.textContent = JSON.stringify(swiperConfig);
+      card.querySelector('.portfolio-details-slider').prepend(configScript);
+    }
+
+    container.addEventListener('click', function (e) {
+
+      // Prevent modal opening when clicking slider controls
+      if (e.target.closest('.swiper-button-next, .swiper-button-prev, .swiper-pagination')) {
+        return;
+      }
+
+      const card = e.target.closest('.product-card');
+      if (!card) return;
+
+      const key = card.getAttribute('data-key');
+      const product = plasticGranuels[key];
+
+      // Set title with info icon + tooltip
+      nameField.innerHTML = `
+        ${product.Name}
+        <span class="info-icon1">ⓘ
+          <span class="tooltip1">${product.Icon}</span>
+        </span>
+      `;
+
+      // Inject slider into info card
+      cardImages.innerHTML = card.dataset.slider;
+
+      // Reinitialize swiper inside info card
+      new Swiper(cardImages.querySelector('.swiper'), {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        navigation: {
+          nextEl: cardImages.querySelector('.swiper-button-next'),
+          prevEl: cardImages.querySelector('.swiper-button-prev')
+        },
+        pagination: {
+          el: cardImages.querySelector('.swiper-pagination'),
+          clickable: true
+        }
+      });
+
+      // Build info table
+      let tableHtml = `<table><tbody>`;
+
+      for (let prop in product) {
+        if (prop === 'Name' || prop === 'Icon') continue;
+
+        if (typeof product[prop] === 'object') {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>
+                <ul>
+                  ${Object.values(product[prop]).map(v => `<li>${v}</li>`).join('')}
+                </ul>
+              </td>
+            </tr>
+          `;
+        } else {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>${product[prop]}</td>
+            </tr>
+          `;
+        }
+      }
+
+      tableHtml += `</tbody></table>`;
+      infoField.innerHTML = tableHtml;
+
+      // Show modal
+      overlay.classList.remove('hidden');
+      infoCard.classList.remove('hidden');
+
+      setTimeout(() => infoCard.classList.add('show'), 10);
+    });
+
+    /************************************
+    * CLOSE HANDLERS
+    ************************************/
+    closeButton.addEventListener('click', closeCard);
+    overlay.addEventListener('click', closeCard);
+
+    function closeCard() {
+      infoCard.classList.remove('show');
+      setTimeout(() => {
+        infoCard.classList.add('hidden');
+        overlay.classList.add('hidden');
+      }, 300);
+    }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Paper Products</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../gallery/logo/logo.jpg" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <script>
+    function data(){
+        const paperKitchenProducts = {
+          "BagasseTakeawayContainers": {
+            "Name": "Bagasse Takeaway Containers",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg",
+              "Image7": "7.jpg"
+            },
+            "Description": "Shrivatsa paper clamshell food boxes are manufactured from <b>100% sugarcane bagasse</b>, a renewable agricultural by-product. They are designed for professional food service environments where <b>sustainability, functionality, and regulatory compliance</b> are essential.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"6 × 6 in | 9 × 9 in",
+              "v2":"1-Compartment | 2-Compartment | 3-Compartment"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Produced from renewable sugarcane waste",
+              "m2":"No plastic coating",
+              "m3":"Fibre-based and plastic-free",
+              "m4":"Manufactured from renewable sugarcane bagasse",
+              "m4":"Lower carbon emissions compared to plastic and foam packaging",
+              "m5":"Supports environmentally responsible and material-efficient food service systems"
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Oil and moisture resistant",
+              "d2":"Suitable for hot and cold food",
+              "d3":"Microwave safe with stable structure"
+            },
+            "Best fit for": "<b>Best fit for:</b> Takeaway and quick-service restaurants, food delivery and cloud kitchens, catering and event food services, and cafés transitioning to plastic-free packaging."
+          },
+          "RoundPlates": {
+            "Name": "Round Plates",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg",
+              "Image7": "7.jpg",
+              "Image8": "8.jpg",
+              "Image9": "9.jpg",
+              "Image10": "10.jpg",
+              "Image11": "11.jpg"
+            },
+            "Description": "Shrivatsa round plates offer a <b>simple, strong, and sustainable solution</b> for everyday food service and large-scale events. Manufactured from sugarcane bagasse, they provide reliable performance without plastic.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"6 inch | 9 inch | 11 inch | 12 inch | Square"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Made from renewable sugarcane bagasse",
+              "m2":"Plastic-free fibre-based construction",
+              "m3":"Natural finish with sturdy construction",
+              "m4":"Reduced environmental impact compared to disposable plastic plates"
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Resistant to oil and moisture",
+              "d2":"Suitable for hot meals",
+              "d3":"Stable structure for full portions"
+            },
+            "Best fit for": "<b>Best fit for:</b> Catering companies, event organizers, food courts, institutional dining, and outdoor food service operations."
+          },
+          "PartitionPlatesRound": {
+            "Name": "Partition Plates (Round)",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg"
+            },
+            "Description": "Shrivatsa partition plates are designed to serve <b>complete meals</b> while keeping food items separated. Built for strength and balance, they are suitable for high-volume food service.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"10 inch - 3 compartments",
+              "v2":"11 inch - 4 compartments",
+              "v3":"12 inch - 4 compartments"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Manufactured from sugarcane bagasse",
+              "m2":"No plastic film or coating",
+              "m3":"Fibre-based and plastic-free",
+              "m4":"Lower carbon footprint compared to plastic meal plates"
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Leak-resistant compartment design",
+              "d2":"Suitable for hot and oily food",
+              "d3":"Strong enough for full meals"
+            },
+            "Best fit for": "<b>Best fit for:</b> Meal service providers, canteens, traditional food service, corporate dining, and large catering operations."
+          },
+          "RectangularMealTrays": {
+            "Name": "Rectangular Meal Trays",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg",
+              "Image7": "7.jpg",
+              "Image8": "8.jpg"
+            },
+            "Description": "Shrivatsa rectangular meal trays are designed for <b>structured meal presentation</b> in professional food service environments. Multiple compartment options support organized serving and portion control.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"3 compartments | 5 compartments | 6 compartments"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Produced from renewable sugarcane bagasse",
+              "m2":"Fibre-based and plastic-free",
+              "m3":"Designed for single-use with reduced environmental impact"
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Rigid structure for stable handling",
+              "d2":"Resistant to oil and moisture",
+              "d3":"Suitable for hot food service"
+            },
+            "Best fit for": "<b>Best fit for:</b> Institutional kitchens, catering services, airline meals, outdoor events, and high-volume meal distribution."
+          },
+          "Bowls": {
+            "Name": "Bowls",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg",
+              "Image7": "7.jpg",
+              "Image8": "8.jpg",
+              "Image9": "9.jpg",
+              "Image10": "10.jpg",
+              "Image11": "11.jpg"
+            },
+            "Description": "Shrivatsa bowls are designed for <b>liquid and semi-liquid foods</b>, offering strength and leak resistance while remaining fully compostable.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"6 oz | 12 oz | Square"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Fibre-based and plastic-free",
+              "m2":"Manufactured from renewable sugarcane bagasse",
+              "m3":"Reduced environmental impact compared to plastic bowls"
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Leak-resistant for soups and curries",
+              "d2":"Suitable for hot food",
+              "d3":"Stable shape for secure handling"
+            },
+            "Best fit for": "<b>Best fit for:</b> Soup kitchens, street food vendors, catering services, takeaway food businesses, and dessert service."
+          },
+          "DonaPlates": {
+            "Name": "Dona Plates",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg"
+            },
+            "Short Description": "Shrivatsa dona plates combine <b>traditional serving style</b> with modern sustainability standards. Designed for culturally inspired food presentation without plastic.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"Standard dona plate size"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Manufactured from renewable sugarcane bagasse",
+              "m2":"Fibre-based and plastic-free",
+              "m3":"Environmentally responsible alternative to traditional disposable dona plates"
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Suitable for dry and semi-dry food",
+              "d2":"Stable structure for easy handling"
+            },
+            "Best fit for": "<b>Best fit for:</b> Traditional food service, street food vendors, festivals, cultural events, and quick-service outlets."
+          },
+          "PaperCupsLids": {
+            "Name": "Paper Cups & Lids",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg"
+            },
+            "Short Description": "Shrivatsa paper cups and lids are designed for <b>secure and spill-resistant beverage service</b>, offering a plastic-free alternative for hot drinks.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"80 mm cup and lid | 90 mm cup and lid"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Produced from renewable fibre-based materials",
+              "m2":"Plastic-free construction",
+              "m3":"Lower environmental impact compared to plastic cups and lids"
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Secure fit for safe handling",
+              "d2":"Suitable for hot beverages",
+              "d3":"Stable design for takeaway use"
+            },
+            "Best fit for": "<b>Best fit for:</b> Cafes, coffee shops, beverage counters, events, and takeaway drink service."
+          },
+          "CompartmentBagasseTakeawayContainers": {
+            "Name": "Compartment Bagasse Takeaway Containers",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg"
+            },
+            "Short Description": "Shrivatsa compartment clamshell food boxes are designed for <b>meal separation and portion control</b> in takeaway and delivery operations. Manufactured from <b>100% sugarcane bagasse</b>, they provide reliable performance without the use of plastic.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"2-compartment | 3-compartment"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Produced from renewable sugarcane bagasse",
+              "m2":"No plastic coating and no plastic film",
+              "m3":"Fibre-based and plastic-free",
+              "m4":"Lower carbon emissions compared to plastic food containers",
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Clear separation of food items",
+              "d2":"Oil and moisture resistant",
+              "d3":"Suitable for hot and cold meals",
+              "d4":"Microwave safe with stable structure"
+            },
+            "Best fit for": "<b>Best fit for:</b> Meal delivery brands, cloud kitchens, takeaway restaurants, catering services, and food businesses serving complete meals in a single pack."
+          },
+          "LiddedTakeawayContainers": {
+            "Name": "Lidded Takeaway Containers",
+            "Images":{
+              "Image1": "1.jpg",
+              "Image2": "2.jpg",
+              "Image3": "3.jpg",
+              "Image4": "4.jpg",
+              "Image5": "5.jpg",
+              "Image6": "6.jpg",
+              "Image7": "7.jpg"
+            },
+            "Short Description": "Shrivatsa single-compartment lunch boxes are designed for <b>simple, secure food packaging</b> where one main dish is served in a closed container. The integrated lid ensures safe handling during transport.",
+            "Available Variants Title": "<h5>Available Variants:</h5>",
+            "Available Variants": {
+              "v1":"Single-compartment lunch box with lid"
+            },
+            "Material Sustainability Title": "<h5>Material & Sustainability:</h5>",
+            "Material Sustainability": {
+              "m1":"Made from renewable sugarcane bagasse",
+              "m2":"No plastic lining or coating",
+              "m3":"Fibre-based and plastic-free",
+              "m4":"Reduced carbon footprint compared to plastic lunch boxes",
+            },
+            "Designed for Everyday Service Title": "<h5>Designed for Everyday Service:</h5>",
+            "Designed for Everyday Service": {
+              "d1":"Leak-resistant structure",
+              "d2":"Suitable for hot and cold food",
+              "d3":"Microwave safe"
+            },
+            "Best fit for": "<b>Best fit for:</b> Takeaway counters, meal prep services, canteens, corporate lunches, and food delivery businesses requiring secure single-meal packaging."
+          }
+        }
+        return paperKitchenProducts;
+    }
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Append
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Updated: May 18 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../gallery/logo/logo.jpg" alt="">
+        <div class="logo-text">
+          <h1 class="sitename">Shrivatsa</h1>
+          <p>Powered by SSIE</p> 
+        </div><span></span>  
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html" class="">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#portfolio">Products</a></li>
+          <li><a href="../index.html#owner">Owner</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="" class=""></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Paper Products</h1>
+              <p class="mb-0">
+                <b>Sustainable fibre-based paper packaging solutions for responsible businesses.</b><br>
+                Our eco-friendly paper products are designed to support businesses transitioning toward more sustainable packaging and disposables. 
+                Manufactured from responsibly sourced, renewable plant-based materials, including bagasse-based solutions, this range prioritizes functionality, hygiene, and environmental responsibility. 
+                Shrivatsa paper products are suitable for food service, catering, and commercial use across European markets.
+                <span class="info-icon" aria-label="Information">ⓘ
+                <span class="tooltip">
+                  Product specifications and sustainability documentation are available upon request.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html#portfolio">Home</a></li>
+            <li class="current">Paper Products</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Paper Products/Main Frame/Paper.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Paper Products/Main Frame/1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Paper Products/Main Frame/2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Paper Products/Main Frame/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../gallery/products/Paper Products/Main Frame/4.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+
+      <div class="container" id="mainContent">
+        <div class="row gy-4" id="productContainer">
+
+          
+            <!-- Product cards will be inserted here -->
+          
+          <div id="overlay" class="hidden"></div>
+          <div id="infoCard" class="info-card hidden">
+            <button id="closeButton" class="close-btn">X</button>
+            <!--<h2 id="cardHeader"></h2>
+            <p id="cardBody"></p>-->
+            <div class="info-content">
+              <div class="info-left" id="cardImages"></div>
+              <div class="info-right scroll-area">
+                <h2 id="cardHeader"></h2>
+                <div id="cardBody"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Posts Section -->
+        </div>
+
+      </div>
+
+    </section><!-- /portfolio Details Section -->
+
+  </main>
+
+  <a href="https://wa.me/4917648060918" 
+   class="whatsapp-float" 
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp Chat">
+  </a>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Shrivatsa</span>
+          </a>
+          <p>At Shrivatsa, we bridge European markets with the world, offering expert import/export services focused on excellence and lasting relationships. Our experienced team ensures smooth, reliable transactions with the highest standards of quality and integrity.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/indiamart.png" width="22"></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/alibaba.png" width="22"></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../privacy-policy.html#terms-conditions">Terms & Conditions</a></li>
+            <li><a href="../privacy-policy.html#compliance-regulatory-information">Compliance & Regulatory Information</a></li>
+            <li><a href="../privacy-policy.html#legal-information-imprint">Legal Information / Imprint</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="../services/export-services.html">Export Services</a></li>
+            <li><a href="../services/import-services.html">Import Services</a></li>
+            <li><a href="../services/distribution-services.html">Distribution Services</a></li>
+            <li><a href="../services/negotiation-partnership-strategy.html">Negotiation & Partnership Strategy</a></li>
+            <li><a href="../services/market-research-consultancy.html">Market Research & Consultancy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us <i class="bi bi-headset help-icon"></i></h4>
+          <p><a href="../location/superSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Munich, Germany</p>
+          <p><a href="../location/shreeSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Office No. 304, Shree Hari Empire,</p>
+          <p style="padding-left: 20px;">Nr. Tulsi Market, Raiya Road,</p>
+          <p style="padding-left: 20px;">Rajkot, Gujarat, India 360005</p>
+          <p class="mt-4"><a href="tel:+4917648060918"><i class="bi bi-telephone me-2"></i></a><span>+49 176 48060918</span></p>
+          <p><a href="mailto:info@supersonicimportexport.com"><i class="bi bi-envelope me-2"></i></a><span>info@supersonicimportexport.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Super Sonic Import Export</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <br><h4 style="font-family: Lucida Handwriting">Made with Love and Passion</h4>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script>
+    const container = document.getElementById('productContainer');
+    const infoCard = document.getElementById('infoCard');
+    const overlay = document.getElementById('overlay');
+    const nameField = document.getElementById('cardHeader');
+    const infoField = document.getElementById('cardBody');
+    const cardImages = document.getElementById('cardImages');
+    const closeButton = document.getElementById('closeButton');
+
+    // Get data
+    const plasticGranuels = data();
+
+    /************************************
+    * BUILD PRODUCT CARDS
+    ************************************/
+    for (let key in plasticGranuels) {
+      const product = plasticGranuels[key];
+
+      const swiperConfig = {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      };
+
+      const card = document.createElement('div');
+      card.className = 'col-lg-4 product-card';
+      card.setAttribute('data-key', key);
+
+      const slidesHtml = buildSlides(product);
+
+      card.innerHTML = `
+        <article>
+          <div class="post-img">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                ${slidesHtml}
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <h2 class="title">${product.Name}</h2>
+        </article>
+      `;
+
+      // Store slider HTML for reuse inside infoCard
+      card.dataset.slider = `
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            ${slidesHtml}
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      `;
+
+      container.appendChild(card);
+
+      // Inject swiper config
+      const configScript = document.createElement('script');
+      configScript.type = 'application/json';
+      configScript.className = 'swiper-config';
+      configScript.textContent = JSON.stringify(swiperConfig);
+      card.querySelector('.portfolio-details-slider').prepend(configScript);
+    }
+
+    container.addEventListener('click', function (e) {
+
+      // Prevent modal opening when clicking slider controls
+      if (e.target.closest('.swiper-button-next, .swiper-button-prev, .swiper-pagination')) {
+        return;
+      }
+
+      const card = e.target.closest('.product-card');
+      if (!card) return;
+
+      const key = card.getAttribute('data-key');
+      const product = plasticGranuels[key];
+
+      // Set title with info icon + tooltip
+      nameField.textContent = product.Name;
+      if(product.Icon){
+        nameField.innerHTML += `
+          <span class="info-icon1">ⓘ
+            <span class="tooltip1">${product.Icon}</span>
+          </span>
+        `;
+      }
+
+      // Inject slider into info card
+      cardImages.innerHTML = card.dataset.slider;
+
+      // Reinitialize swiper inside info card
+      new Swiper(cardImages.querySelector('.swiper'), {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        navigation: {
+          nextEl: cardImages.querySelector('.swiper-button-next'),
+          prevEl: cardImages.querySelector('.swiper-button-prev')
+        },
+        pagination: {
+          el: cardImages.querySelector('.swiper-pagination'),
+          clickable: true
+        }
+      });
+
+      // Build info table
+      let tableHtml = `<table><tbody>`;
+
+      for (let prop in product) {
+        if (prop === 'Name' || prop === 'Icon') continue;
+
+        if (typeof product[prop] === 'object') {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>
+                <ul>
+                  ${Object.values(product[prop]).map(v => `<li>${v}</li>`).join('')}
+                </ul>
+              </td>
+            </tr>
+          `;
+        } else {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>${product[prop]}</td>
+            </tr>
+          `;
+        }
+      }
+
+      tableHtml += `</tbody></table><br>`;
+      infoField.innerHTML = tableHtml;
+
+      // Show modal
+      overlay.classList.remove('hidden');
+      infoCard.classList.remove('hidden');
+
+      setTimeout(() => infoCard.classList.add('show'), 10);
+    });
+
+    /************************************
+    * CLOSE HANDLERS
+    ************************************/
+    closeButton.addEventListener('click', closeCard);
+    overlay.addEventListener('click', closeCard);
+
+    function closeCard() {
+      infoCard.classList.remove('show');
+      setTimeout(() => {
+        infoCard.classList.add('hidden');
+        overlay.classList.add('hidden');
+      }, 300);
+    }
+    function buildSlides(product) {
+      if (!product.Images) return "";
+      return Object.values(product.Images)
+        .map(src => `<div class="swiper-slide"><img src="../gallery/products/Paper Products/${product.Name}/${src}" alt="${product.Name}"></div>`)
+        .join("");
+    }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

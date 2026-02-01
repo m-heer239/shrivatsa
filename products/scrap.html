@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Scrap Materials</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../gallery/logo/logo.jpg" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <script>
+    // Show popup on page load
+    window.onload = function () {
+        document.getElementById("popupOverlay").style.display = "flex";
+    };
+
+    // Close popup
+    function closePopup() {
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+    
+    function data(){
+        const scrap = {
+          "PlasticScrap":{
+            "Name": "Plastic Scrap",
+            "Images": {
+              "Image1": "Crushed scrap (1).png",
+              "Image2": "Crushed scrap (2).png",
+              "Image3": "Crushed scrap (3).png",
+              "Image4": "Film scrap  (1).png",
+              "Image5": "Film scrap  (2).png",
+              "Image6": "Film scrap  (5).png",
+              "Image1": "Injection scrap (1).png",
+              "Image2": "Injection scrap (2).png",
+              "Image3": "Injection scrap (3).png",
+              "Image4": "Plastic Scrap.png",
+            },
+            "Description": "Shrivatsa supplies <b>sorted and verified plastic scrap</b> to support recycling operations and manufacturers requiring consistent raw material feedstock. Materials are sourced from controlled industrial streams to ensure repeatability and quality stability.",
+            "Available Scrap Categories Title":"<h5>Available Scrap Categories:</h5>",
+            "Available Scrap Categories": {
+              "Injection Scrap": "<b>Injection scrap:</b> Clean broken molded parts",
+              "Film Scrap": "<b>Film scrap:</b> Production waste used in liner and bag manufacturing",
+              "Crushed Material": "<b>Crushed material:</b> Shredded post-industrial lumps and sprues"
+            },
+            "Technical Supply Information Title":"<h5>Technical & Supply Information:</h5>",
+            "Technical & Supply Information": {
+              "Condition": "Condition: Cleaned and pre-sorted",
+              "Packaging options": "Packaging options: Loose or baled",
+              "Origin": "Origin: Verified industrial production sources"
+            },
+            "Icon": "Material classification and quality documentation are available upon request."
+          },
+          "MetalScrap":{
+            "Name": "Metal Scrap",
+            "Images": {
+              "Image1": "Aluminium Scrap.png",
+              "Image2": "Cast Iron Scrap.png",
+              "Image3": "Copper Scrap.png",
+              "Image4": "Metal Scrap.png",
+              "Image5": "Stainless Steel Scrap.png",
+              "Image6": "Steel Scrap.png"
+            },
+            "Description": "Shrivatsa supplies <b>ferrous and non-ferrous metal scrap</b> suitable for reprocessing, smelting, casting, and industrial reuse. Materials are sourced from verified recyclers and bulk industrial yards to meet downstream processing requirements.",
+            "Available Scrap Categories Title":"<h5>Available Scrap Categories:</h5>",
+            "Available Scrap Categories": {
+              "Aluminium scrap": "<b>Aluminium scrap:</b> Suitable for casting and extrusion",
+              "Copper scrap": "<b>Copper scrap:</b> Electrical cables, conductors, and fittings",
+              "Brass scrap": "<b>Brass scrap:</b> Hardware components and sanitary fittings",
+              "Steel scrap": "<b>Steel scrap:</b> Smelting operations and rolling mills"
+            },
+            "Technical Supply Information Title":"<h5>Technical & Supply Information:</h5>",
+            "Technical & Supply Information": {
+              "Sourcing": "Sourcing: Verified recyclers and industrial suppliers",
+              "Material forms": "Material forms: Wires, sheets, rods, turnings",
+              "Condition": "Condition: Free from hazardous contamination"
+            },
+            "Icon": "Inspection reports and sourcing documentation are available upon request."
+          }
+        }
+        return scrap;
+    }
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Append
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Updated: May 18 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+  <!-- Popup Overlay -->
+  <div id="popupOverlay" class="popup-overlay">
+    <div class="popup-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Launching Shortly</h2>
+        <p>
+            Transforming Waste into Worth.</br>
+            Scrap is not the end — it’s the beginning of something new.</br></br>
+            At Shrivatsa, we responsibly source, trade, and export plastic scrap, transforming waste into valuable raw material for a cleaner, 
+            circular production cycle. </br>♻️ We connect recyclers, manufacturers, and traders across global markets.</br>
+            From copper to aluminum, our metal scrap network fuels industries and innovation worldwide. 
+            With reliable sourcing, verified partners, and seamless global trade flows, Shrivatsa’s metal division builds strong bridges between recyclers, refineries, and industries across continents.</br></br>
+            ✨ This section is being built — but collaborations are already live.
+        </p>
+    </div>
+  </div>
+
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../gallery/logo/logo.jpg" alt="">
+        <div class="logo-text">
+          <h1 class="sitename">Shrivatsa</h1>
+          <p>Powered by SSIE</p> 
+        </div>  
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html" class="">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#portfolio">Products</a></li>
+          <li><a href="../index.html#owner">Owner</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="" class=""></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Scrap Materials (Plastic & Metal)</h1>
+              <p class="mb-0">
+                <b>Verified plastic and metal scrap solutions supporting circular industrial supply chains.</b><br>
+                Shrivatsa supplies carefully verified plastic and metal scrap materials to support recycling and circular economy initiatives. 
+                Our scrap solutions are sourced and processed to meet industrial reuse requirements, helping manufacturers and recyclers optimize material recovery and reduce waste. 
+                Quality consistency and transparent sourcing remain central to our approach.
+                <span class="info-icon" aria-label="Information">ⓘ
+                <span class="tooltip">
+                  Material classifications and quality documentation are available upon request.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="../index.html#portfolio">Home</a></li>
+            <li class="current">Scrap Materials (Plastic & Metal)</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Scrap/Main Frame/Scraps.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Scrap/Main Frame/Copper Scrap.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Scrap/Main Frame/Plastic Scrap.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../gallery/products/Scrap/Main Frame/Steel Scrap.png" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+
+      <div class="container" id="mainContent">
+        <div class="row gy-4" id="productContainer">
+
+          
+            <!-- Product cards will be inserted here -->
+          
+          <div id="overlay" class="hidden"></div>
+          <div id="infoCard" class="info-card hidden">
+            <button id="closeButton" class="close-btn">X</button>
+            <!--<h2 id="cardHeader"></h2>
+            <p id="cardBody"></p>-->
+            <div class="info-content">
+              <div class="info-left" id="cardImages"></div>
+              <div class="info-right scroll-area">
+                <h2 id="cardHeader"></h2>
+                <div id="cardBody"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Posts Section -->
+        </div>
+
+      </div>
+
+    </section><!-- /portfolio Details Section -->
+
+  </main>
+
+  <a href="https://wa.me/4917648060918" 
+   class="whatsapp-float" 
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp Chat">
+  </a>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Shrivatsa</span>
+          </a>
+          <p>At Shrivatsa, we bridge European markets with the world, offering expert import/export services focused on excellence and lasting relationships. Our experienced team ensures smooth, reliable transactions with the highest standards of quality and integrity.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/indiamart.png" width="22"></a>
+            <a class="footer-icon" href="#"><img src="../assets/img/alibaba.png" width="22"></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../privacy-policy.html#terms-conditions">Terms & Conditions</a></li>
+            <li><a href="../privacy-policy.html#compliance-regulatory-information">Compliance & Regulatory Information</a></li>
+            <li><a href="../privacy-policy.html#legal-information-imprint">Legal Information / Imprint</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="../services/export-services.html">Export Services</a></li>
+            <li><a href="../services/import-services.html">Import Services</a></li>
+            <li><a href="../services/distribution-services.html">Distribution Services</a></li>
+            <li><a href="../services/negotiation-partnership-strategy.html">Negotiation & Partnership Strategy</a></li>
+            <li><a href="../services/market-research-consultancy.html">Market Research & Consultancy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us <i class="bi bi-headset help-icon"></i></h4>
+          <p><a href="../location/superSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Munich, Germany</p>
+          <p><a href="../location/shreeSonicMap.html" target="_blank"><i class="bi bi-geo-alt"></i></a> Office No. 304, Shree Hari Empire,</p>
+          <p style="padding-left: 20px;">Nr. Tulsi Market, Raiya Road,</p>
+          <p style="padding-left: 20px;">Rajkot, Gujarat, India 360005</p>
+          <p class="mt-4"><a href="tel:+4917648060918"><i class="bi bi-telephone me-2"></i></a><span>+49 176 48060918</span></p>
+          <p><a href="mailto:info@supersonicimportexport.com"><i class="bi bi-envelope me-2"></i></a><span>info@supersonicimportexport.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Super Sonic Import Export</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <br><h4 style="font-family: Lucida Handwriting">Made with Love and Passion</h4>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script>
+    const container = document.getElementById('productContainer');
+    const infoCard = document.getElementById('infoCard');
+    const overlay = document.getElementById('overlay');
+    const nameField = document.getElementById('cardHeader');
+    const infoField = document.getElementById('cardBody');
+    const cardImages = document.getElementById('cardImages');
+    const closeButton = document.getElementById('closeButton');
+
+    // Get data
+    const plasticGranuels = data();
+
+    /************************************
+    * BUILD PRODUCT CARDS
+    ************************************/
+    for (let key in plasticGranuels) {
+      const product = plasticGranuels[key];
+
+      const swiperConfig = {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      };
+
+      const card = document.createElement('div');
+      card.className = 'col-lg-4 product-card';
+      card.setAttribute('data-key', key);
+
+      const slidesHtml = buildSlides(product);
+
+      card.innerHTML = `
+        <article>
+          <div class="post-img">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                ${slidesHtml}
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <h2 class="title">${product.Name}</h2>
+        </article>
+      `;
+
+      // Store slider HTML for reuse inside infoCard
+      card.dataset.slider = `
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            ${slidesHtml}
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      `;
+
+      container.appendChild(card);
+
+      // Inject swiper config
+      const configScript = document.createElement('script');
+      configScript.type = 'application/json';
+      configScript.className = 'swiper-config';
+      configScript.textContent = JSON.stringify(swiperConfig);
+      card.querySelector('.portfolio-details-slider').prepend(configScript);
+    }
+
+    container.addEventListener('click', function (e) {
+
+      // Prevent modal opening when clicking slider controls
+      if (e.target.closest('.swiper-button-next, .swiper-button-prev, .swiper-pagination')) {
+        return;
+      }
+
+      const card = e.target.closest('.product-card');
+      if (!card) return;
+
+      const key = card.getAttribute('data-key');
+      const product = plasticGranuels[key];
+
+      // Set title with info icon + tooltip
+      nameField.textContent = product.Name;
+      if(product.Icon){
+        nameField.innerHTML += `
+          <span class="info-icon1">ⓘ
+            <span class="tooltip1">${product.Icon}</span>
+          </span>
+        `;
+      }
+
+      // Inject slider into info card
+      cardImages.innerHTML = card.dataset.slider;
+
+      // Reinitialize swiper inside info card
+      new Swiper(cardImages.querySelector('.swiper'), {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        navigation: {
+          nextEl: cardImages.querySelector('.swiper-button-next'),
+          prevEl: cardImages.querySelector('.swiper-button-prev')
+        },
+        pagination: {
+          el: cardImages.querySelector('.swiper-pagination'),
+          clickable: true
+        }
+      });
+
+      // Build info table
+      let tableHtml = `<table><tbody>`;
+
+      for (let prop in product) {
+        if (prop === 'Name' || prop === 'Icon') continue;
+
+        if (typeof product[prop] === 'object') {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>
+                <ul>
+                  ${Object.values(product[prop]).map(v => `<li>${v}</li>`).join('')}
+                </ul>
+              </td>
+            </tr>
+          `;
+        } else {
+          tableHtml += `
+            <tr>
+              <th></th>
+              <td>${product[prop]}</td>
+            </tr>
+          `;
+        }
+      }
+
+      tableHtml += `</tbody></table><br>`;
+      infoField.innerHTML = tableHtml;
+
+      // Show modal
+      overlay.classList.remove('hidden');
+      infoCard.classList.remove('hidden');
+
+      setTimeout(() => infoCard.classList.add('show'), 10);
+    });
+
+    /************************************
+    * CLOSE HANDLERS
+    ************************************/
+    closeButton.addEventListener('click', closeCard);
+    overlay.addEventListener('click', closeCard);
+
+    function closeCard() {
+      infoCard.classList.remove('show');
+      setTimeout(() => {
+        infoCard.classList.add('hidden');
+        overlay.classList.add('hidden');
+      }, 300);
+    }
+    function buildSlides(product) {
+      if (!product.Images) return "";
+      return Object.values(product.Images)
+        .map(src => `<div class="swiper-slide"><img src="../gallery/products/Scrap/${product.Name}/${src}" alt="${product.Name}"></div>`)
+        .join("");
+    }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
