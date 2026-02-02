@@ -484,7 +484,7 @@
       let tableHtml = `<table><tbody>`;
 
       for (let prop in product) {
-        if (prop === 'Name' || prop === 'Icon') continue;
+        if (prop === 'Name' || prop === 'Icon' || prop=='Images') continue;
 
         if (typeof product[prop] === 'object') {
           tableHtml += `
