@@ -2836,8 +2836,8 @@ h2 span {
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
