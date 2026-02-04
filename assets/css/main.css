@@ -1593,14 +1593,18 @@ h2 span {
   --background-color: #f4f4f4;
 }
 .owner {
-  display: ruby;
-  padding-left: 20%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-left: 0;
+  flex-wrap: wrap;
 }
 .team-card {
   cursor: pointer;
 }
 .team .member {
   position: relative;
+  justify-content: center;
 }
 
 .team .member .member-img {
@@ -1615,6 +1619,24 @@ h2 span {
 @media (max-width: 1024px) {
   .team .member .member-img {
     margin: 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .owner {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .team-card.vertical-style {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .owner {
+    gap: 30px;
   }
 }
 
