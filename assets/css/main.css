@@ -61,6 +61,9 @@
 .sitename {
   font-family: 'Times New Roman';
 }
+#sitename {
+  font-family: 'Times New Roman';
+}
 
 /*--------------------------------------------------------------
 # General
