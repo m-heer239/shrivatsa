@@ -9,8 +9,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../gallery/logo/logo.jpg" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../gallery/logo/logo1.png" rel="icon">
+  <link href="../gallery/logo/logo1.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -43,16 +43,16 @@
           "PlasticScrap":{
             "Name": "Plastic Scrap",
             "Images": {
-              "Image1": "Crushed scrap (1).png",
-              "Image2": "Crushed scrap (2).png",
-              "Image3": "Crushed scrap (3).png",
-              "Image4": "Film scrap  (1).png",
-              "Image5": "Film scrap  (2).png",
-              "Image6": "Film scrap  (5).png",
-              "Image1": "Injection scrap (1).png",
-              "Image2": "Injection scrap (2).png",
-              "Image3": "Injection scrap (3).png",
-              "Image4": "Plastic Scrap.png",
+              "Image1": "Crushed scrap (1).webp",
+              "Image2": "Crushed scrap (2).webp",
+              "Image3": "Crushed scrap (3).webp",
+              "Image4": "Film scrap  (1).webp",
+              "Image5": "Film scrap  (2).webp",
+              "Image6": "Film scrap  (5).webp",
+              "Image1": "Injection scrap (1).webp",
+              "Image2": "Injection scrap (2).webp",
+              "Image3": "Injection scrap (3).webp",
+              "Image4": "Plastic Scrap.webp",
             },
             "Description": "Shrivatsa supplies <b>sorted and verified plastic scrap</b> to support recycling operations and manufacturers requiring consistent raw material feedstock. Materials are sourced from controlled industrial streams to ensure repeatability and quality stability.",
             "Available Scrap Categories Title":"<h5>Available Scrap Categories:</h5>",
@@ -72,12 +72,12 @@
           "MetalScrap":{
             "Name": "Metal Scrap",
             "Images": {
-              "Image1": "Aluminium Scrap.png",
-              "Image2": "Cast Iron Scrap.png",
-              "Image3": "Copper Scrap.png",
-              "Image4": "Metal Scrap.png",
-              "Image5": "Stainless Steel Scrap.png",
-              "Image6": "Steel Scrap.png"
+              "Image1": "Aluminium Scrap.webp",
+              "Image2": "Cast Iron Scrap.webp",
+              "Image3": "Copper Scrap.webp",
+              "Image4": "Metal Scrap.webp",
+              "Image5": "Stainless Steel Scrap.webp",
+              "Image6": "Steel Scrap.webp"
             },
             "Description": "Shrivatsa supplies <b>ferrous and non-ferrous metal scrap</b> suitable for reprocessing, smelting, casting, and industrial reuse. Materials are sourced from verified recyclers and bulk industrial yards to meet downstream processing requirements.",
             "Available Scrap Categories Title":"<h5>Available Scrap Categories:</h5>",
@@ -117,12 +117,12 @@
         <h2>Launching Shortly</h2>
         <p>
             Transforming Waste into Worth.</br>
-            Scrap is not the end — it’s the beginning of something new.</br></br>
+            Scrap is not the end - it’s the beginning of something new.</br></br>
             At Shrivatsa, we responsibly source, trade, and export plastic scrap, transforming waste into valuable raw material for a cleaner, 
             circular production cycle. </br>♻️ We connect recyclers, manufacturers, and traders across global markets.</br>
             From copper to aluminum, our metal scrap network fuels industries and innovation worldwide. 
             With reliable sourcing, verified partners, and seamless global trade flows, Shrivatsa’s metal division builds strong bridges between recyclers, refineries, and industries across continents.</br></br>
-            ✨ This section is being built — but collaborations are already live.
+            ✨ This section is being built - but collaborations are already live.
         </p>
     </div>
   </div>
@@ -217,19 +217,19 @@
           <div class="swiper-wrapper align-items-center">
 
             <div class="swiper-slide">
-              <img src="../gallery/products/Scrap/Main Frame/Scraps.png" alt="">
+              <img src="../gallery/products1/Scrap/Main Frame/Scraps.webp" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="../gallery/products/Scrap/Main Frame/Copper Scrap.png" alt="">
+              <img src="../gallery/products1/Scrap/Main Frame/Copper Scrap.webp" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="../gallery/products/Scrap/Main Frame/Plastic Scrap.png" alt="">
+              <img src="../gallery/products1/Scrap/Main Frame/Plastic Scrap.webp" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="../gallery/products/Scrap/Main Frame/Steel Scrap.png" alt="">
+              <img src="../gallery/products1/Scrap/Main Frame/Steel Scrap.webp" alt="">
             </div>
 
           </div>
@@ -388,11 +388,11 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
-        },
+        }/*,
         pagination: {
           el: ".swiper-pagination",
           clickable: true
-        }
+        }*/
       };
 
       const card = document.createElement('div');
@@ -473,11 +473,11 @@
         navigation: {
           nextEl: cardImages.querySelector('.swiper-button-next'),
           prevEl: cardImages.querySelector('.swiper-button-prev')
-        },
+        }/*,
         pagination: {
           el: cardImages.querySelector('.swiper-pagination'),
           clickable: true
-        }
+        }*/
       });
 
       // Build info table
@@ -533,7 +533,7 @@
     function buildSlides(product) {
       if (!product.Images) return "";
       return Object.values(product.Images)
-        .map(src => `<div class="swiper-slide"><img src="../gallery/products/Scrap/${product.Name}/${src}" alt="${product.Name}"></div>`)
+        .map(src => `<div class="swiper-slide"><img src="../gallery/products1/Scrap/${product.Name}/${src}" alt="${product.Name}"></div>`)
         .join("");
     }
   </script>

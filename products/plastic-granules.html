@@ -9,8 +9,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../gallery/logo/logo.jpg" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../gallery/logo/logo1.png" rel="icon">
+  <link href="../gallery/logo/logo1.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -43,23 +43,23 @@
           "VirginPlasticGranules": {
             "Name": "Virgin Plastic Granules",
             "Images":{
-              "Image2": "13.png",
-              "Image3": "8.png",
-              "Image4": "6.png",
-              "Image5": "7.png",
-              "Image7": "9.png",
-              "Image8": "10.png",
-              "Image9": "11.png",
-              "Image10": "12.png",
-              "Image11": "5.png",
-              "Image12": "14.png",
-              "Image13": "15.png",
-              "Image14": "4.png",
-              "Image15": "17.png",
-              "Image16": "18.png",
-              "Image17": "19.png",
-              "Image18": "20.png",
-              "Image19": "21.png"
+              "Image2": "13.webp",
+              "Image3": "8.webp",
+              "Image4": "6.webp",
+              "Image5": "7.webp",
+              "Image7": "9.webp",
+              "Image8": "10.webp",
+              "Image9": "11.webp",
+              "Image10": "12.webp",
+              "Image11": "5.webp",
+              "Image12": "14.webp",
+              "Image13": "15.webp",
+              "Image14": "4.webp",
+              "Image15": "17.webp",
+              "Image16": "18.webp",
+              "Image17": "19.webp",
+              "Image18": "20.webp",
+              "Image19": "21.webp"
             },
             "Description": "Shrivatsa supplies industrial-grade virgin plastic granules developed for manufacturers that require <b>material consistency, process stability, and reliable production outcomes</b>. Our polymer range supports a wide variety of molding and extrusion applications across multiple industries.",
             "Available Polymer Types Title": "<h5>Available Polymer Types & Applications:</h5>",
@@ -82,18 +82,18 @@
           "RecycledPlasticGranules":{
             "Name": "Recycled Plastic Granules",
             "Images": {
-              "Image1": "all Granules.png",
-              "Image2": "GPPS.png",
-              "Image3": "HD-Blow.png",
-              "Image4": "1.png",
-              "Image5": "2.png",
-              "Image6": "HD-Injection.png",
-              "Image7": "HD-Pipe-Grade.png",
-              "Image8": "LD.png",
-              "Image9": "PP-Raffia.png",
-              "Image10": "PP-Random-Copolymer.png",
-              "Image11": "PP.png",
-              "Image12": "TPU.png"
+              "Image1": "all Granules.webp",
+              "Image2": "GPPS.webp",
+              "Image3": "HD-Blow.webp",
+              "Image4": "1.webp",
+              "Image5": "2.webp",
+              "Image6": "HD-Injection.webp",
+              "Image7": "HD-Pipe-Grade.webp",
+              "Image8": "LD.webp",
+              "Image9": "PP-Raffia.webp",
+              "Image10": "PP-Random-Copolymer.webp",
+              "Image11": "PP.webp",
+              "Image12": "TPU.webp"
             },
             "Description": "Shrivatsa offers recycled plastic granules designed for <b>cost-efficient manufacturing and circular production systems</b>. These materials are suitable for applications where functional strength, repeatability, and sustainability considerations are required.",
             "Recommended Applications Title": "<h5>Recommended Applications:</h5>",
@@ -140,7 +140,7 @@
             Engineered for high performance while supporting a more sustainable future.
             High-purity plastics designed to perform, endure, and reduce environmental impact.
             Materials built for reliability, performance, and long-term sustainability</br></br>
-            ✨ This section is being built — but collaborations are already live.
+            ✨ This section is being built - but collaborations are already live.
         </p>
     </div>
   </div>
@@ -235,15 +235,15 @@
           <div class="swiper-wrapper align-items-center">
 
             <div class="swiper-slide">
-              <img src="../gallery/products/Plastic granules/Main Frame/Plastic granules.png" alt="">
+              <img src="../gallery/products1/Plastic granules/Main Frame/Plastic granules.webp" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="../gallery/products/Plastic granules/Main Frame/all Granules.png" alt="">
+              <img src="../gallery/products1/Plastic granules/Main Frame/all Granules.webp" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="../gallery/products/Plastic granules/Main Frame/1.png" alt="">
+              <img src="../gallery/products1/Plastic granules/Main Frame/1.webp" alt="">
             </div>
 
           </div>
@@ -402,11 +402,11 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
-        },
+        }/*,
         pagination: {
           el: ".swiper-pagination",
           clickable: true
-        }
+        }*/
       };
 
       const card = document.createElement('div');
@@ -487,11 +487,11 @@
         navigation: {
           nextEl: cardImages.querySelector('.swiper-button-next'),
           prevEl: cardImages.querySelector('.swiper-button-prev')
-        },
+        }/*,
         pagination: {
           el: cardImages.querySelector('.swiper-pagination'),
           clickable: true
-        }
+        }*/
       });
 
       // Build info table
@@ -547,7 +547,7 @@
     function buildSlides(product) {
       if (!product.Images) return "";
       return Object.values(product.Images)
-        .map(src => `<div class="swiper-slide"><img src="../gallery/products/Plastic granules/${product.Name}/${src}" alt="${product.Name}"></div>`)
+        .map(src => `<div class="swiper-slide"><img src="../gallery/products1/Plastic granules/${product.Name}/${src}" alt="${product.Name}"></div>`)
         .join("");
     }
   </script>
